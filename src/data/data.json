@@ -1,0 +1,72 @@
+{
+	"title": "Elden Ring Quest Checklist",
+	"filters": [
+		{
+			"title": "Boc, the Seamster",
+			"name": "boc",
+			"items": [
+				{
+					"name": "Boc_1",
+					"label": "N/A",
+					"keys": [],
+					"description": "test1",
+					"active": true
+				},
+				{
+					"name": "Boc_2",
+					"label": "Boc, Rebirth",
+					"keys": ["boc", "boc-rebirth"],
+					"description": "test2",
+					"active": false
+				},
+				{
+					"name": "Boc_3",
+					"label": "Boc, Beauty",
+					"keys": ["boc", "boc-beauty"],
+					"description": "test3",
+					"active": false
+				}
+			]
+		},
+		{
+			"title": "White Faced Varre",
+			"name": "varre",
+			"items": [
+				{
+					"name": "Varre_1",
+					"label": "N/A",
+					"keys": [],
+					"active": true
+				},
+				{
+					"name": "Varre_2",
+					"label": "Lord of Blood",
+					"keys": ["varre"],
+					"active": false
+				}
+			]
+		}
+	],
+	"items": [
+		{
+			"type": "checkbox",
+			"label": "Hit the talking tree and talk to Boc",
+			"keys": ["boc"]
+		},
+		{
+			"type": "checkbox",
+			"label": "FILTER TEST 1, Rebirth",
+			"keys": ["boc-rebirth"]
+		},
+		{
+			"type": "checkbox",
+			"label": "FILTER TEST 2, Beauty",
+			"keys": ["boc-beauty"]
+		},
+		{
+			"type": "checkbox",
+			"label": "Talk to White Faced Varre (Maidenless lmao)",
+			"keys": ["varre"]
+		}
+	]
+}
