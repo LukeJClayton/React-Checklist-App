@@ -6,21 +6,21 @@
 			"name": "boc",
 			"items": [
 				{
-					"name": "Boc_1",
+					"name": "filter_boc_1",
 					"label": "N/A",
 					"keys": [],
 					"description": "test1",
 					"active": true
 				},
 				{
-					"name": "Boc_2",
+					"name": "filter_boc_2",
 					"label": "Boc, Rebirth",
 					"keys": ["boc", "boc-rebirth"],
 					"description": "test2",
 					"active": false
 				},
 				{
-					"name": "Boc_3",
+					"name": "filter_boc_3",
 					"label": "Boc, Beauty",
 					"keys": ["boc", "boc-beauty"],
 					"description": "test3",
@@ -33,13 +33,13 @@
 			"name": "varre",
 			"items": [
 				{
-					"name": "Varre_1",
+					"name": "filter-varre_1",
 					"label": "N/A",
 					"keys": [],
 					"active": true
 				},
 				{
-					"name": "Varre_2",
+					"name": "filter-varre_2",
 					"label": "Lord of Blood",
 					"keys": ["varre"],
 					"active": false
@@ -49,21 +49,25 @@
 	],
 	"items": [
 		{
+      "name": "item_boc_1",
 			"type": "checkbox",
 			"label": "Hit the talking tree and talk to Boc",
 			"keys": ["boc"]
 		},
 		{
+      "name": "item_boc_2",
 			"type": "checkbox",
 			"label": "FILTER TEST 1, Rebirth",
 			"keys": ["boc-rebirth"]
 		},
 		{
+      "name": "item_boc_3",
 			"type": "checkbox",
 			"label": "FILTER TEST 2, Beauty",
 			"keys": ["boc-beauty"]
 		},
 		{
+      "name": "item_varre_1",
 			"type": "checkbox",
 			"label": "Talk to White Faced Varre (Maidenless lmao)",
 			"keys": ["varre"]

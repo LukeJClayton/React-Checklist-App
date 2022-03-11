@@ -1,6 +1,4 @@
-import React, {useContext} from "react";
-import FilterData, {updateFilterState} from '../js/FilterData.js';
-import {FilterFunction, FilterContext} from "../context/Filter.js";
+import FilterData, { useUpdateFilterState } from '../js/Filter.js';
 
 function FilterBar(props) {
   var filterSections = []
@@ -28,14 +26,13 @@ function FilterSection(props) {
 }
 
 function Filter(props) {
-  const filterContext = useContext(FilterContext);
-  const filterFunction = useContext(FilterFunction);
+  const { updateFilterState } = useUpdateFilterState();
 
   return (
     <div className="filters__filter js-filter" data-section-name={ props.name } data-name={ props.data.name } data-keys={ props.data.keys.join(',') }>
       <label>
         { props.data.label }
-        <input type="radio" name={ props.name } value={ props.data.name } onChange={ (e) => {updateFilterState(e, filterContext, filterFunction) }} />
+        <input type="radio" name={ props.name } value={ props.data.name } onChange={ updateFilterState } />
       </label>
     </div>
   );
