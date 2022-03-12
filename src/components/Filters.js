@@ -1,38 +1,45 @@
-import FilterData, { useUpdateFilterState } from '../js/Filter.js';
+import { useContext } from 'react'
+import { FilterContext } from '../context/Filter'
+import { useUpdateFilterState } from '../js/Filter.js'
 
-function FilterBar(props) {
-  var filterSections = []
-  for (var i = 0; i < props.data.length; i++) {
-    filterSections.push(<FilterSection data={ props.data[i] } key={i} />)
-  }
-  return (
-    <div className="filters">
-      { filterSections }
-    </div>
-  );
-}
+const FilterBar = ({ filters }) => (
+  <div className="filters">
+    {filters.map(f => (
+      <FilterSection key={f.name} title={f.title} filters={f.items} sectionName={f.name} />
+    ))}
+  </div>
+);
 
-function FilterSection(props) {
-  var filters = []
-  for (var i = 0; i < props.data.items.length; i++) {
-    filters.push(<Filter name={props.data.name} data={ props.data.items[i] } key={i} />)
-  }
-  return (
-    <div className="filters__section">
-      <h4 className="filters__title">{ props.data.title }</h4>
-      { filters }
-    </div>
-  );
-}
+const FilterSection = ({ title, filters, sectionName }) => (
+  <div className="filters__section">
+    <h4 className="filters__title">{title}</h4>
+    {filters.map(f => (
+      <Filter name={f.name} key={f.name} label={f.label} sectionName={sectionName} />
+    ))}
+  </div>
+)
 
-function Filter(props) {
-  const { updateFilterState } = useUpdateFilterState();
+function Filter({ label, name, sectionName }) {
+  const { filters } = useContext(FilterContext)
+  const { setFilterActive } = useUpdateFilterState()
 
   return (
-    <div className="filters__filter js-filter" data-section-name={ props.name } data-name={ props.data.name } data-keys={ props.data.keys.join(',') }>
+    <div className="filters__filter js-filter">
       <label>
-        { props.data.label }
-        <input type="radio" name={ props.name } value={ props.data.name } onChange={ updateFilterState } />
+        {label}
+        <input
+          type="radio"
+          name={name}
+          value={name}
+          onChange={() => setFilterActive(sectionName, name)}
+          checked={
+            filters
+              .find(s => s.name === sectionName)
+              .items
+              .find(f => f.name === name)
+              .active
+          }
+        />
       </label>
     </div>
   );
