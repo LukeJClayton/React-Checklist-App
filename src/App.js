@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import { setLocalStorage, getLocalStorage } from './js/Storage.js';
 import { useLoadProfile, useSaveProfile } from "./js/Profile.js";
 
-import { FilterFunction, FilterContext } from "./context/Filter.js";
+import { FilterFunction, FilterProvider, FilterContext } from "./context/Filter.js";
 import { ProfileContext } from "./context/Profile.js";
 import { ItemsContext } from "./context/Items.js";
 
@@ -14,7 +14,7 @@ import './App.css';
 const data = require('./data/data.json');
 
 function Main(props) {
-  const filterContext = useContext(FilterContext);
+  const filters = useContext(FilterContext);
   const filterFunction = useContext(FilterFunction);
   const saveProfile = useSaveProfile();
   const loadProfile = useLoadProfile();
@@ -26,7 +26,7 @@ function Main(props) {
   return (
     <div className="main">
       <p className="main__title">{ data.title }</p>
-      <FilterBar data={ data.filters } />
+      <FilterBar filters={filters.filters} />
       <ItemList data={ props.filteredData } />
     </div>
   );
@@ -36,7 +36,7 @@ function App() {
   const [filteredData, setFilteredData] = useState(data.items);
 
   return (
-    <FilterContext.Provider value={ data.filters }>
+    <FilterProvider>
     <FilterFunction.Provider value={ setFilteredData }>
     <ItemsContext.Provider value={ [] }>
     <ProfileContext.Provider value={ '' }>
@@ -44,7 +44,7 @@ function App() {
     </ProfileContext.Provider>
     </ItemsContext.Provider>
     </FilterFunction.Provider>
-    </FilterContext.Provider>
+    </FilterProvider>
   );
 }
 
