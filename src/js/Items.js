@@ -22,12 +22,10 @@ export function useUpdateItemState (e) {
     }
 
     if (!found) {
-      console.log(itemsContext)
       itemsContext.push({
         name: inputName,
         active: true
       })
-      console.log(itemsContext)
     }
 
     saveProfile();

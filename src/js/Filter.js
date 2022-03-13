@@ -21,14 +21,14 @@ export function useUpdateFilterState (e) {
     ], [])
 
     setFilters(newFilters)
-    filterItems(newFilters, filterFunction);
-    saveProfile();
+    filterItems(newFilters, filterFunction, saveProfile);
+    saveProfile(newFilters);
   };
 
   return { setFilterActive };
 }
 
-export function filterItems (filterState, filterFunction) {
+export function filterItems (filterState, filterFunction, saveProfile) {
   var keys = [];
 
   for (var i = 0; i < filterState.length; i++) {
