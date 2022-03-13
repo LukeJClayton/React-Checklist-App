@@ -27,16 +27,27 @@ export function useLoadProfile () {
   return loadProfile;
 }
 
+export function useLoadFilters () {
+  const profileKey = 'userProfile';
+  const { filters, setFilters } = useContext(FilterContext);
+
+  function loadFilters () {
+    const profileData = getLocalStorage(profileKey).filters;
+    setFilters(profileData);
+  }
+
+  return loadFilters;
+}
+
 export function useSaveProfile () {
   const [profileContext, setProfileContext] = useContext(ProfileContext);
-  const filterContext = useContext(FilterContext);
+  const filterContext = useContext(FilterContext).filters;
   const itemsContext =  useContext(ItemsContext);
   const profileKey = 'userProfile';
 
 
   function saveProfile () {
-    console.log(itemsContext)
-    setLocalStorage(profileKey, {"filters": formatFilterData(filterContext) || [], "items": itemsContext || []})
+    setLocalStorage(profileKey, {"filters": filterContext || [], "items": itemsContext || []})
   }
 
   return saveProfile;

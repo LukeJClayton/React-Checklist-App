@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { setLocalStorage, getLocalStorage } from './js/Storage.js';
-import { useLoadProfile, useSaveProfile } from "./js/Profile.js";
+import { useLoadFilters, useLoadProfile, useSaveProfile } from "./js/Profile.js";
 
 import { FilterFunction, FilterProvider, FilterContext } from "./context/Filter.js";
 import { ProfileContext } from "./context/Profile.js";
@@ -18,9 +18,10 @@ function Main(props) {
   const filterFunction = useContext(FilterFunction);
   const saveProfile = useSaveProfile();
   const loadProfile = useLoadProfile();
+  const loadFilters = useLoadFilters();
 
   useEffect(() => {
-    loadProfile();
+    loadFilters();
   }, [])
 
   return (
