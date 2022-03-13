@@ -14,9 +14,8 @@ export function useLoadProfile () {
 
   function loadProfile () {
     const profileData = getLocalStorage(profileKey);
-    console.log(profileData)
+
     if (profileData && profileData.filters && profileData.items) {
-      console.log('here')
       applyProfileData(profileData, updateFilterState);
     } else {
       saveProfile();
@@ -68,7 +67,7 @@ function formatFilterData (data) {
 
 function useApplyProfileData () {
   const [profileContext, setProfileContext] = useContext(ProfileContext);
-  const updateFilterState = useUpdateFilterState().updateFilterState;
+  const updateFilterState = useUpdateFilterState().setFilterActive;
   const updateItemState = useUpdateItemState().updateItemState;
 
   function applyProfileData (data) {
