@@ -5,32 +5,25 @@ import { useSaveProfile } from "../js/Profile.js";
 const data = require('../data/data.json')
 
 export function useUpdateFilterState (e) {
-  const filterContext = useContext(FilterContext);
+  const { filters, setFilters } = useContext(FilterContext);
   const filterFunction = useContext(FilterFunction);
   const saveProfile = useSaveProfile();
 
-  function updateFilterState (e) {
-    let element = e.target.parentElement.parentElement
-      , sectionName = element.dataset.sectionName
-      , inputName = element.dataset.name;
-
-    for (var i = 0; i < filterContext.length; i++) {
-      let items = filterContext[i].items;
-
-      if (filterContext[i].name == sectionName) {
-        for (var j = 0; j < items.length; j++) {
-          if (items[j].name == inputName) {
-            items[j].active = true;
-          } else {
-            items[j].active = false;
-          }
-        }
+  const setFilterActive = (sectionName, name) => {
+    const newFilters = filters.reduce((acc, section) => [
+      ...acc,
+      {
+        ...section,
+        items: section.name === sectionName
+          ? section.items.map(s => s.name === name ? { ...s, active: true } : { ...s, active: false })
+          : section.items
       }
-    }
-    filterItems(filterContext, filterFunction, saveProfile);
-  }
+    ], [])
 
-  return { updateFilterState };
+    setFilters(newFilters)
+  };
+
+  return { setFilterActive };
 }
 
 export function filterItems (filterState, filterFunction, saveProfile) {
