@@ -1,5 +1,4 @@
-import { createContext, useState } from 'react'
-// import { useLoadFilters } from "../js/Profile.js";
+import { createContext, useState } from 'react';
 import { setLocalStorage, getLocalStorage } from '../js/Storage.js';
 import data from '../data/data.json'
 
@@ -15,5 +14,3 @@ export const FilterProvider = ({ children }) => {
     </FilterContext.Provider>
   )
 }
-
-export const FilterFunction = createContext([{}, () => {}])

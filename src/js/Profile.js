@@ -12,17 +12,17 @@ export function useLoadProfile () {
   const updateFilterState = useUpdateFilterState();
   const saveProfile = useSaveProfile();
   const { filters, setFilters } = useContext(FilterContext);
+  const { items, setItems } = useContext(ItemsContext);
 
   function loadProfile () {
     const profileData = getLocalStorage(profileKey);
 
     if (profileData && profileData.filters && profileData.items) {
       setFilters(profileData.filters);
+      setItems(profileData.items);
     } else {
-      setFilters(getLocalStorage(profileKey).filters);
+      saveProfile();
     }
-
-    saveProfile();
   }
 
   return loadProfile;
@@ -31,10 +31,11 @@ export function useLoadProfile () {
 export function useSaveProfile () {
   const [profileContext, setProfileContext] = useContext(ProfileContext);
   const filterContext = useContext(FilterContext).filters;
-  const itemsContext =  useContext(ItemsContext);
+  const itemsContext =  useContext(ItemsContext).items;
   const profileKey = 'userProfile';
 
   function saveProfile (filterOverride, itemOverride) {
+    console.log(itemOverride)
     setLocalStorage(profileKey, {"filters": filterOverride || filterContext || [], "items": itemOverride || itemsContext || []})
   }
 

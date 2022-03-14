@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import { ItemsContext } from '../context/Items'
 import { useLoadProfile, useSaveProfile } from "../js/Profile.js";
 import { useUpdateItemState } from '../js/Items.js';
 
@@ -21,12 +23,23 @@ function ItemList(props) {
 
 function Checkbox(props) {
   const { updateItemState } = useUpdateItemState();
+  const { items } = useContext(ItemsContext);
 
   return (
     <div className="items__checkbox js-filterable-item" data-name={ props.data.name } data-keys={ props.data.keys.join(',') }>
       <label>
         { props.data.label }
-        <input type="checkbox" name={ props.data.name } value={ props.data.name } onChange={ updateItemState } />
+        <input
+          type="checkbox"
+          name={ props.data.name }
+          value={ props.data.name }
+          onChange={ updateItemState }
+          checked={
+            items
+              .find(f => f.name === props.data.name)
+              .active
+          }
+        />
       </label>
     </div>
   )

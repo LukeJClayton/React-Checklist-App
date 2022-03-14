@@ -52,25 +52,29 @@
       "name": "item_boc_1",
 			"type": "checkbox",
 			"label": "Hit the talking tree and talk to Boc",
-			"keys": ["boc"]
+			"keys": ["boc"],
+      "active": false
 		},
 		{
       "name": "item_boc_2",
 			"type": "checkbox",
 			"label": "FILTER TEST 1, Rebirth",
-			"keys": ["boc-rebirth"]
+			"keys": ["boc-rebirth"],
+      "active": false
 		},
 		{
       "name": "item_boc_3",
 			"type": "checkbox",
 			"label": "FILTER TEST 2, Beauty",
-			"keys": ["boc-beauty"]
+			"keys": ["boc-beauty"],
+      "active": false
 		},
 		{
       "name": "item_varre_1",
 			"type": "checkbox",
 			"label": "Talk to White Faced Varre (Maidenless lmao)",
-			"keys": ["varre"]
+			"keys": ["varre"],
+      "active": false
 		}
 	]
 }

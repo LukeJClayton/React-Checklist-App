@@ -1,12 +1,13 @@
 import { useContext } from "react";
-import { FilterFunction, FilterContext } from "../context/Filter.js";
+import { FilterContext } from "../context/Filter.js";
+import { ItemsContext } from "../context/Items.js";
 import { useSaveProfile } from "../js/Profile.js";
 
 const data = require('../data/data.json')
 
 export function useUpdateFilterState (e) {
   const { filters, setFilters } = useContext(FilterContext);
-  const filterFunction = useContext(FilterFunction);
+  const { items, setItems } = useContext(ItemsContext);
   const saveProfile = useSaveProfile();
 
   const setFilterActive = (sectionName, name) => {
@@ -21,14 +22,13 @@ export function useUpdateFilterState (e) {
     ], [])
 
     setFilters(newFilters)
-    filterItems(newFilters, filterFunction, saveProfile);
-    saveProfile(newFilters);
+    filterItems(newFilters, setItems, saveProfile);
   };
 
   return { setFilterActive };
 }
 
-export function filterItems (filterState, filterFunction, saveProfile) {
+export function filterItems (filterState, setItems, saveProfile) {
   var keys = [];
 
   for (var i = 0; i < filterState.length; i++) {
@@ -46,5 +46,8 @@ export function filterItems (filterState, filterFunction, saveProfile) {
     }
   })
 
-  filterFunction(filteredData)
+  console.log(filteredData)
+
+  setItems(filteredData);
+  saveProfile(filterState, filteredData);
 }
