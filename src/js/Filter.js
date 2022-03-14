@@ -46,8 +46,6 @@ export function filterItems (filterState, setItems, saveProfile) {
     }
   })
 
-  console.log(filteredData)
-
   setItems(filteredData);
   saveProfile(filterState, filteredData);
 }

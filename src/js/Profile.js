@@ -8,7 +8,6 @@ import { useUpdateItemState } from "../js/Items.js";
 
 export function useLoadProfile () {
   const profileKey = 'userProfile';
-  const applyProfileData = useApplyProfileData();
   const updateFilterState = useUpdateFilterState();
   const saveProfile = useSaveProfile();
   const { filters, setFilters } = useContext(FilterContext);
@@ -35,7 +34,6 @@ export function useSaveProfile () {
   const profileKey = 'userProfile';
 
   function saveProfile (filterOverride, itemOverride) {
-    console.log(itemOverride)
     setLocalStorage(profileKey, {"filters": filterOverride || filterContext || [], "items": itemOverride || itemsContext || []})
   }
 
@@ -63,48 +61,4 @@ function formatFilterData (data) {
   }
 
   return filterItems;
-}
-
-function useApplyProfileData () {
-  const [profileContext, setProfileContext] = useContext(ProfileContext);
-  const updateFilterState = useUpdateFilterState().setFilterActive;
-  const updateItemState = useUpdateItemState().updateItemState;
-  const { filters, setFilters } = useContext(FilterContext);
-
-  function applyProfileData (data) {
-    const filters = data.filters;
-    const items = data.items;
-    console.log(data)
-    setFilters(data.filters)
-
-    // for (let i = 0; i < filters.length; i++) {
-    //   if (filters[i].active == true) {
-    //     let element = document.querySelector('[data-name="' + filters[i].name + '"] input')
-
-    //     if (element) {
-    //       element.checked = true;
-    //     }
-
-    //     updateFilterState({target: element})
-    //   }
-    // }
-
-
-    // for (let i = 0; i < items.length; i++) {
-    //   if (items[i].active == true) {
-    //     console.log(items[i])
-    //     console.log('.js-filterable-item[data-name="' + items[i].name + '"]')
-    //     console.log(document.querySelector('.js-filterable-item[data-name="' + items[i].name + '"]'))
-    //     let itemElement = document.querySelector('.js-filterable-item[data-name="' + items[i].name + '"] input')
-    //     console.log(itemElement)
-    //     if (itemElement) {
-    //       itemElement.checked = true;
-    //     }
-
-    //     updateItemState({target: itemElement});
-    //   }
-    // }
-  }
-
-  return applyProfileData;
 }
