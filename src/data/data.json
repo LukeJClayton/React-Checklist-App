@@ -126,6 +126,7 @@
       "label": "Leave Limgrave, light a bonfire in Liurnia/Caelid/Beyond",
       "keys": ["event_1"],
       "precursors": ["item_roderika_3", "item_boc_3"],
+      "successors": ["event_4", "event_5", "event_10"],
       "active": false
     },
     {
@@ -134,6 +135,7 @@
       "label": "Visit Roundtable Hold",
       "keys": ["event_2"],
       "precursors": ["item_roderika_3"],
+      "successors": ["event_3"],
       "active": false
     },
     {
@@ -142,6 +144,7 @@
       "label": "Kill Godrick the Grafted",
       "keys": ["event_3"],
       "precursors": ["event_2"],
+      "successors": [],
       "active": false
     },
     {
@@ -150,6 +153,7 @@
       "label": "Aquire a second Great Rune",
       "keys": ["event_4"],
       "precursors": ["event_1"],
+      "successors": [],
       "active": false
     },
     {
@@ -158,6 +162,7 @@
       "label": "Kill Rennala",
       "keys": ["event_5"],
       "precursors": ["event_1", "event_12"],
+      "successors": [],
       "active": false
     },
     {
@@ -166,6 +171,7 @@
       "label": "Visit Volcano Manor",
       "keys": ["event_6", "event_10"],
       "precursors": ["event_1"],
+      "successors": [],
       "active": false
     },
     {
@@ -183,6 +189,7 @@
       "label": "Kill Rykard",
       "keys": ["event_8"],
       "precursors": ["event_6"],
+      "successors": [],
       "active": false
     },
     {
@@ -191,6 +198,7 @@
       "label": "Visit Mohgwyn's Palace",
       "keys": ["event_9"],
       "precursors": ["event_1"],
+      "successors": [],
       "active": false
     },
     {
@@ -199,6 +207,7 @@
       "label": "Reach the Altus Plataeu",
       "keys": ["event_10"],
       "precursors": ["event_2", "item_corhyn_3", "item_corhyn_1"],
+      "successors": [],
       "active": false
     },
     {
@@ -207,6 +216,7 @@
       "label": "Reach the Royal Capital",
       "keys": ["event_11"],
       "precursors": ["event_4", "event_10"],
+      "successors": [],
       "active": false
     },
     {
@@ -215,6 +225,7 @@
       "label": "Enter the Academy of Raya Lucaria",
       "keys": ["event_12"],
       "precursors": ["event_1"],
+      "successors": ["event_5"],
       "active": false
     },
     {
@@ -223,6 +234,7 @@
       "label": "Kill Morgott",
       "keys": ["event_13"],
       "precursors": ["event_11"],
+      "successors": [],
       "active": false
     },
     {
@@ -231,6 +243,7 @@
       "label": "Reach the Mountaintops of the Giants",
       "keys": ["event_14"],
       "precursors": ["event_13"],
+      "successors": [],
       "active": false
     },
     {
@@ -239,6 +252,7 @@
       "label": "Kill the Fire Giant",
       "keys": ["event_15"],
       "precursors": ["event_10" ,"event_11", "event_13", "event_14"],
+      "successors": [],
       "active": false
     },
     {
@@ -247,6 +261,7 @@
       "label": "Reach Crumbling Farum Azula",
       "keys": ["event_16"],
       "precursors": ["event_10" ,"event_11", "event_13", "event_14", "event_15"],
+      "successors": [],
       "active": false
     },
     {
@@ -255,6 +270,7 @@
       "label": "Kill Maliketh, The Black Blade",
       "keys": ["event_17"],
       "precursors": ["event_16", "event_15"],
+      "successors": [],
       "active": false
     },
 
@@ -264,6 +280,7 @@
       "label": "Meet Roderika at the Stormhill Shack",
       "keys": ["roderika"],
       "precursors": [],
+      "successors": [],
       "active": false
     },
     {
@@ -272,6 +289,7 @@
       "label": "Find the Chrysalid's Memento deep in Stormveil Castle",
       "keys": ["roderika"],
       "precursors": ["item_roderika_1"],
+      "successors": [],
       "active": false
     },
     {
@@ -280,6 +298,7 @@
       "label": "Return the Memento to Roderika",
       "keys": ["roderika"],
       "precursors": ["item_roderika_2"],
+      "successors": ["event_1", "event_2"],
       "active": false
     },
     {
@@ -288,6 +307,7 @@
       "label": "Go to Roderika's previous location at Stormhill Shack",
       "keys": ["roderika"],
       "precursors": ["item_roderika_3", "event_2"],
+      "successors": [],
       "active": false
     },
     {
@@ -296,6 +316,7 @@
       "label": "Talk to Rodericka and Master Hewg until she moves to sitting near him",
       "keys": ["roderika"],
       "precursors": ["item_roderika_4"],
+      "successors": [],
       "active": false
     },
     {
@@ -304,6 +325,7 @@
       "label": "Go back to where you found the Memento for a Crimson Hood",
       "keys": ["roderika"],
       "precursors": ["item_roderika_5"],
+      "successors": [],
       "active": false
     },
 
@@ -313,6 +335,7 @@
       "label": "Hit the talking tree and talk to Boc",
       "keys": ["boc"],
       "precursors": [],
+      "successors": [],
       "active": false
     },
     {
@@ -321,6 +344,7 @@
       "label": "Go to Coastal Cave, talk to Boc",
       "keys": ["boc"],
       "precursors": ["item_boc_1"],
+      "successors": [],
       "active": false
     },
     {
@@ -329,6 +353,7 @@
       "label": "Kill the boss and return the Sewing Needle to Boc",
       "keys": ["boc"],
       "precursors": ["item_boc_2"],
+      "successors": ["event_1"],
       "active": false
     },
     {
@@ -337,6 +362,7 @@
       "label": "Meet Boc next to the the Lake-Facing Cliffs Grace and talk to him",
       "keys": ["boc"],
       "precursors": ["item_boc_3", "event_1"],
+      "successors": [],
       "active": false
     },
     {
@@ -345,6 +371,7 @@
       "label": "Grab the Gold Sewing Needle from the Church of Vows",
       "keys": ["boc"],
       "precursors": ["item_boc_4"],
+      "successors": [],
       "active": false
     },
     {
@@ -353,6 +380,7 @@
       "label": "Buy a piece of boss gear from Enia, and give the Gold Needle to Boc",
       "keys": ["boc"],
       "precursors": ["item_boc_5", "event_2"],
+      "successors": [],
       "active": false
     },
     {
@@ -361,6 +389,7 @@
       "label": "Meet Boc at the East Capital Rampart in Leyndell Royal Capital",
       "keys": ["boc"],
       "precursors": ["item_boc_6", "event_11"],
+      "successors": [],
       "active": false
     },
     {
@@ -369,6 +398,7 @@
       "label": "Talk to Boc until he says he is ugly, offer him a Larval Tear",
       "keys": ["boc", "boc-rebirth"],
       "precursors": ["item_boc_7", "event_5"],
+      "successors": [],
       "active": false
     },
     {
@@ -377,6 +407,7 @@
       "label": "Talk to Boc in Renalla's boss room, reload the area again to find him dead",
       "keys": ["boc", "boc-rebirth"],
       "precursors": ["item_boc_8"],
+      "successors": [],
       "active": false
     },
     {
@@ -385,6 +416,7 @@
       "label": "Visit Hermit Village to find the Prattling-Pate: You're Beautiful",
       "keys": ["boc", "boc-beauty"],
       "precursors": ["item_boc_7", "event_6"],
+      "successors": [],
       "active": false
     },
     {
@@ -393,6 +425,7 @@
       "label": "Talk to Boc until he says he is ugly, use the Prattling-Pate: You're Beautiful",
       "keys": ["boc", "boc-beauty"],
       "precursors": ["item_boc_10"],
+      "successors": [],
       "active": false
     },
 
@@ -402,6 +435,7 @@
       "label": "Talk to White Faced Varre by the First Step",
       "keys": ["varre"],
       "precursors": [],
+      "successors": [],
       "active": false
     },
     {
@@ -410,6 +444,7 @@
       "label": "Talk to White Faced Varre at Rose Church and recieve Festering Bloody Fingers",
       "keys": ["varre"],
       "precursors": ["item_varre_1", "event_1", "event_3"],
+      "successors": [],
       "active": false
     },
     {
@@ -418,6 +453,7 @@
       "label": "Invade three players",
       "keys": ["varre"],
       "precursors": ["item_varre_2"],
+      "successors": [],
       "active": false
     },
     {
@@ -426,6 +462,7 @@
       "label": "Return to Varre to recieve the Lord of Blood's Favor",
       "keys": ["varre"],
       "precursors": ["item_varre_3"],
+      "successors": [],
       "active": false
     },
     {
@@ -434,6 +471,7 @@
       "label": "Interact with the corpse at the Church of Inhibition or the corpse at Chapel of Anticipation",
       "keys": ["varre"],
       "precursors": ["item_varre_4"],
+      "successors": [],
       "active": false
     },
     {
@@ -442,6 +480,7 @@
       "label": "Return to Varre to gain the Bloody Finger and the Pureblood Knights Medal",
       "keys": ["varre"],
       "precursors": ["item_varre_5"],
+      "successors": [],
       "active": false
     },
     {
@@ -450,6 +489,7 @@
       "label": "Kill the invader in Mohgwyn's Palace three times",
       "keys": ["varre"],
       "precursors": ["item_varre_6", "event_9"],
+      "successors": [],
       "active": false
     },
     {
@@ -458,6 +498,7 @@
       "label": "Duel White Faced Varre",
       "keys": ["varre"],
       "precursors": ["item_varre_7"],
+      "successors": [],
       "active": false
     },
 
@@ -467,6 +508,7 @@
       "label": "Talk to Thops in the Church of Irith",
       "keys": ["thops"],
       "precursors": ["event_1"],
+      "successors": [],
       "active": false
     },
     {
@@ -475,6 +517,7 @@
       "label": "Find the spare Glintstone Key on top of a Chandelier in the Church of the Cuckoo's inside of the Academy",
       "keys": ["thops"],
       "precursors": ["item_thops_1", "event_12"],
+      "successors": [],
       "active": false
     },
     {
@@ -483,6 +526,7 @@
       "label": "Return to Thops and give him the Glintstone Key",
       "keys": ["thops"],
       "precursors": ["item_thops_2"],
+      "successors": [],
       "active": false
     },
     {
@@ -491,6 +535,7 @@
       "label": "Travel to Schoolhouse Classroom Grace in the Academy and loot Thops's body just outside and around the corner",
       "keys": ["thops"],
       "precursors": ["item_thops_3"],
+      "successors": [],
       "active": false
     },
 
@@ -500,6 +545,7 @@
       "label": "Go North of the Third Church of Marika and into the water to find a Sending Gate. Use it to find the Bestial Sanctum and talk to Gurranq",
       "keys": ["gurranq"],
       "precursors": ["event_1"],
+      "successors": [],
       "active": false
     },
     {
@@ -508,6 +554,7 @@
       "label": "Give Gurranq 4 deathroots",
       "keys": ["gurranq"],
       "precursors": ["item_gurranq_1"],
+      "successors": [],
       "active": false
     },
     {
@@ -516,6 +563,7 @@
       "label": "Return to the Bestial Sanctum and subdue Gurranq",
       "keys": ["gurranq"],
       "precursors": ["item_gurranq_2"],
+      "successors": [],
       "active": false
     },
     {
@@ -524,6 +572,7 @@
       "label": "Give Gurranq 5 more deathroots, for a total of 9",
       "keys": ["gurranq"],
       "precursors": ["item_gurranq_3"],
+      "successors": [],
       "active": false
     },
 
@@ -533,6 +582,7 @@
       "label": "Talk to Corhyn in Roundtable Hold",
       "keys": ["corhyn"],
       "precursors": ["event_2"],
+      "successors": [],
       "active": false
     },
     {
@@ -541,6 +591,7 @@
       "label": "Jump off the balcony in Roundtable Hold and kill Mad Tongue Alberich",
       "keys": ["corhyn"],
       "precursors": ["item_corhyn_1", "event_2"],
+      "successors": [],
       "active": false
     },
     {
@@ -549,6 +600,7 @@
       "label": "Talk to Brother Corhyn and he will announce he is leaving",
       "keys": ["corhyn"],
       "precursors": ["item_corhyn_2"],
+      "successors": [],
       "active": false
     },
     {
@@ -557,6 +609,7 @@
       "label": "Talk to Brother Corhyn on the Altus Junction",
       "keys": ["corhyn"],
       "precursors": ["item_corhyn_3", "event_10"],
+      "successors": [],
       "active": false
     },
     {
@@ -565,6 +618,7 @@
       "label": "Talk to Goldmask",
       "keys": ["corhyn"],
       "precursors": ["item_corhyn_4"],
+      "successors": [],
       "active": false
     },
     {
@@ -573,6 +627,7 @@
       "label": "Return to Corhyn and tell him of Goldmasks whereabouts",
       "keys": ["corhyn"],
       "precursors": ["item_corhyn_5"],
+      "successors": [],
       "active": false
     },
     {
@@ -581,6 +636,7 @@
       "label": "Return to Goldmask to find Corhyn by his side",
       "keys": ["corhyn"],
       "precursors": ["item_corhyn_6"],
+      "successors": [],
       "active": false
     },
     {
@@ -589,6 +645,7 @@
       "label": "Talk to Corhyn and Goldmask in hill near West Capital Rampart",
       "keys": ["corhyn"],
       "precursors": ["item_corhyn_7", "event_11"],
+      "successors": [],
       "active": false
     },
     {
@@ -597,6 +654,7 @@
       "label": "Find the Golden Order Principia and give it to Corhyn or Miriel to learn the Law of Regression",
       "keys": ["corhyn"],
       "precursors": ["item_corhyn_8"],
+      "successors": [],
       "active": false
     },
     {
@@ -605,6 +663,7 @@
       "label": "Travel West of the Erdtree Sanctuary Grace and down an elevator and stairs to find a message on the ground. Stand on the message and face the statue then cast Law of Regression. Touch the newly formed message then talk to Goldmask and Corhyn.",
       "keys": ["corhyn"],
       "precursors": ["item_corhyn_9"],
+      "successors": [],
       "active": false
     },
     {
@@ -613,6 +672,7 @@
       "label": "Travel to the Stargazer's Ruins in the North section of the Mountaintops of the Giants and talk to Corhyn and Goldmask",
       "keys": ["corhyn"],
       "precursors": ["item_corhyn_10", "event_13"],
+      "successors": [],
       "active": false
     },
     {
@@ -621,6 +681,7 @@
       "label": "Find the corpse of Goldmask on the West side of Erdtree Sanctuary Grace, past a few plants for the Mending Rune of Perfect Order. Reload and check Goldmask again for his armor. Corhyn can be found on the bridge near Stargazer Ruins, kill him for his armor and weapon",
       "keys": ["corhyn"],
       "precursors": ["item_corhyn_11", "event_15", "event_17"],
+      "successors": [],
       "active": false
     }
   ]
