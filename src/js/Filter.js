@@ -49,7 +49,7 @@ export function filterItems (filterState, setItems, saveProfile) {
     }
   })
 
-  const sortedData = sortItems(filteredData)
+  const sortedData = sortItems(filteredData, 10);
 
   setItems(sortedData);
   saveProfile(filterState, sortedData);

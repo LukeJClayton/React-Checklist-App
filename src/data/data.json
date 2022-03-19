@@ -15,14 +15,14 @@
         {
           "name": "filter_boc_2",
           "label": "Rebirth",
-          "keys": ["boc", "boc-rebirth", "event_1", "event_2", "event_5",  "event_10", "event_11", "event_4"],
+          "keys": ["boc", "boc-rebirth", "event_1", "event_5", "event_11", "event_4"],
           "description": "test2",
           "active": false
         },
         {
           "name": "filter_boc_3",
           "label": "Beauty",
-          "keys": ["boc", "boc-beauty", "event_1", "event_2", "event_6", "event_10", "event_11", "event_4"],
+          "keys": ["boc", "boc-beauty", "event_1", "event_6", "event_11", "event_4"],
           "description": "test3",
           "active": false
         }
@@ -60,6 +60,60 @@
           "name": "filter-roderika_2",
           "label": "Spirit Tuner",
           "keys": ["roderika", "event_1", "event_2"],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Thops",
+      "name": "section_thops",
+      "items": [
+        {
+          "name": "filter-thops_1",
+          "label": "N/A",
+          "keys": [],
+          "active": true
+        },
+        {
+          "name": "filter-thops_2",
+          "label": "Return to the Academy",
+          "keys": ["thops", "event_1", "event_12"],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Gurranq",
+      "name": "section_gurranq",
+      "items": [
+        {
+          "name": "filter-gurranq_1",
+          "label": "N/A",
+          "keys": [],
+          "active": true
+        },
+        {
+          "name": "filter-gurranq_2",
+          "label": "D's Replacement",
+          "keys": ["gurranq", "event_1"],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Brother Corhyn",
+      "name": "section_corhyn",
+      "items": [
+        {
+          "name": "filter-corhyn_1",
+          "label": "N/A",
+          "keys": [],
+          "active": true
+        },
+        {
+          "name": "filter-corhyn_2",
+          "label": "Goldmask",
+          "keys": ["corhyn", "goldmask", "event_2", "event_10", "event_11", "event_15", "event_17"],
           "active": false
         }
       ]
@@ -103,7 +157,7 @@
       "type": "event",
       "label": "Kill Rennala",
       "keys": ["event_5"],
-      "precursors": ["event_1"],
+      "precursors": ["event_1", "event_12"],
       "active": false
     },
     {
@@ -144,7 +198,7 @@
       "type": "event",
       "label": "Reach the Altus Plataeu",
       "keys": ["event_10"],
-      "precursors": [],
+      "precursors": ["event_2", "item_corhyn_3", "item_corhyn_1"],
       "active": false
     },
     {
@@ -153,6 +207,54 @@
       "label": "Reach the Royal Capital",
       "keys": ["event_11"],
       "precursors": ["event_4", "event_10"],
+      "active": false
+    },
+    {
+      "name": "event_12",
+      "type": "event",
+      "label": "Enter the Academy of Raya Lucaria",
+      "keys": ["event_12"],
+      "precursors": ["event_1"],
+      "active": false
+    },
+    {
+      "name": "event_13",
+      "type": "event",
+      "label": "Kill Morgott",
+      "keys": ["event_13"],
+      "precursors": ["event_11"],
+      "active": false
+    },
+    {
+      "name": "event_14",
+      "type": "event",
+      "label": "Reach the Mountaintops of the Giants",
+      "keys": ["event_14"],
+      "precursors": ["event_13"],
+      "active": false
+    },
+    {
+      "name": "event_15",
+      "type": "event",
+      "label": "Kill the Fire Giant",
+      "keys": ["event_15"],
+      "precursors": ["event_10" ,"event_11", "event_13", "event_14"],
+      "active": false
+    },
+    {
+      "name": "event_16",
+      "type": "event",
+      "label": "Reach Crumbling Farum Azula",
+      "keys": ["event_16"],
+      "precursors": ["event_10" ,"event_11", "event_13", "event_14", "event_15"],
+      "active": false
+    },
+    {
+      "name": "event_17",
+      "type": "event",
+      "label": "Kill Maliketh, The Black Blade",
+      "keys": ["event_17"],
+      "precursors": ["event_16", "event_15"],
       "active": false
     },
 
@@ -204,6 +306,7 @@
       "precursors": ["item_roderika_5"],
       "active": false
     },
+
     {
       "name": "item_boc_1",
       "type": "checkbox",
@@ -292,6 +395,7 @@
       "precursors": ["item_boc_10"],
       "active": false
     },
+
     {
       "name": "item_varre_1",
       "type": "checkbox",
@@ -354,6 +458,169 @@
       "label": "Duel White Faced Varre",
       "keys": ["varre"],
       "precursors": ["item_varre_7"],
+      "active": false
+    },
+
+    {
+      "name": "item_thops_1",
+      "type": "checkbox",
+      "label": "Talk to Thops in the Church of Irith",
+      "keys": ["thops"],
+      "precursors": ["event_1"],
+      "active": false
+    },
+    {
+      "name": "item_thops_2",
+      "type": "checkbox",
+      "label": "Find the spare Glintstone Key on top of a Chandelier in the Church of the Cuckoo's inside of the Academy",
+      "keys": ["thops"],
+      "precursors": ["item_thops_1", "event_12"],
+      "active": false
+    },
+    {
+      "name": "item_thops_3",
+      "type": "checkbox",
+      "label": "Return to Thops and give him the Glintstone Key",
+      "keys": ["thops"],
+      "precursors": ["item_thops_2"],
+      "active": false
+    },
+    {
+      "name": "item_thops_4",
+      "type": "checkbox",
+      "label": "Travel to Schoolhouse Classroom Grace in the Academy and loot Thops's body just outside and around the corner",
+      "keys": ["thops"],
+      "precursors": ["item_thops_3"],
+      "active": false
+    },
+
+    {
+      "name": "item_gurranq_1",
+      "type": "checkbox",
+      "label": "Go North of the Third Church of Marika and into the water to find a Sending Gate. Use it to find the Bestial Sanctum and talk to Gurranq",
+      "keys": ["gurranq"],
+      "precursors": ["event_1"],
+      "active": false
+    },
+    {
+      "name": "item_gurranq_2",
+      "type": "checkbox",
+      "label": "Give Gurranq 4 deathroots",
+      "keys": ["gurranq"],
+      "precursors": ["item_gurranq_1"],
+      "active": false
+    },
+    {
+      "name": "item_gurranq_3",
+      "type": "checkbox",
+      "label": "Return to the Bestial Sanctum and subdue Gurranq",
+      "keys": ["gurranq"],
+      "precursors": ["item_gurranq_2"],
+      "active": false
+    },
+    {
+      "name": "item_gurranq_4",
+      "type": "checkbox",
+      "label": "Give Gurranq 5 more deathroots, for a total of 9",
+      "keys": ["gurranq"],
+      "precursors": ["item_gurranq_3"],
+      "active": false
+    },
+
+    {
+      "name": "item_corhyn_1",
+      "type": "checkbox",
+      "label": "Talk to Corhyn in Roundtable Hold",
+      "keys": ["corhyn"],
+      "precursors": ["event_2"],
+      "active": false
+    },
+    {
+      "name": "item_corhyn_2",
+      "type": "checkbox",
+      "label": "Jump off the balcony in Roundtable Hold and kill Mad Tongue Alberich",
+      "keys": ["corhyn"],
+      "precursors": ["item_corhyn_1", "event_2"],
+      "active": false
+    },
+    {
+      "name": "item_corhyn_3",
+      "type": "checkbox",
+      "label": "Talk to Brother Corhyn and he will announce he is leaving",
+      "keys": ["corhyn"],
+      "precursors": ["item_corhyn_2"],
+      "active": false
+    },
+    {
+      "name": "item_corhyn_4",
+      "type": "checkbox",
+      "label": "Talk to Brother Corhyn on the Altus Junction",
+      "keys": ["corhyn"],
+      "precursors": ["item_corhyn_3", "event_10"],
+      "active": false
+    },
+    {
+      "name": "item_corhyn_5",
+      "type": "checkbox",
+      "label": "Talk to Goldmask",
+      "keys": ["corhyn"],
+      "precursors": ["item_corhyn_4"],
+      "active": false
+    },
+    {
+      "name": "item_corhyn_6",
+      "type": "checkbox",
+      "label": "Return to Corhyn and tell him of Goldmasks whereabouts",
+      "keys": ["corhyn"],
+      "precursors": ["item_corhyn_5"],
+      "active": false
+    },
+    {
+      "name": "item_corhyn_7",
+      "type": "checkbox",
+      "label": "Return to Goldmask to find Corhyn by his side",
+      "keys": ["corhyn"],
+      "precursors": ["item_corhyn_6"],
+      "active": false
+    },
+    {
+      "name": "item_corhyn_8",
+      "type": "checkbox",
+      "label": "Talk to Corhyn and Goldmask in hill near West Capital Rampart",
+      "keys": ["corhyn"],
+      "precursors": ["item_corhyn_7", "event_11"],
+      "active": false
+    },
+    {
+      "name": "item_corhyn_9",
+      "type": "checkbox",
+      "label": "Find the Golden Order Principia and give it to Corhyn or Miriel to learn the Law of Regression",
+      "keys": ["corhyn"],
+      "precursors": ["item_corhyn_8"],
+      "active": false
+    },
+    {
+      "name": "item_corhyn_10",
+      "type": "checkbox",
+      "label": "Travel West of the Erdtree Sanctuary Grace and down an elevator and stairs to find a message on the ground. Stand on the message and face the statue then cast Law of Regression. Touch the newly formed message then talk to Goldmask and Corhyn.",
+      "keys": ["corhyn"],
+      "precursors": ["item_corhyn_9"],
+      "active": false
+    },
+    {
+      "name": "item_corhyn_11",
+      "type": "checkbox",
+      "label": "Travel to the Stargazer's Ruins in the North section of the Mountaintops of the Giants and talk to Corhyn and Goldmask",
+      "keys": ["corhyn"],
+      "precursors": ["item_corhyn_10", "event_13"],
+      "active": false
+    },
+    {
+      "name": "item_corhyn_12",
+      "type": "checkbox",
+      "label": "Find the corpse of Goldmask on the West side of Erdtree Sanctuary Grace, past a few plants for the Mending Rune of Perfect Order. Reload and check Goldmask again for his armor. Corhyn can be found on the bridge near Stargazer Ruins, kill him for his armor and weapon",
+      "keys": ["corhyn"],
+      "precursors": ["item_corhyn_11", "event_15", "event_17"],
       "active": false
     }
   ]
