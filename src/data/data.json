@@ -33,13 +33,13 @@
       "name": "section_varre",
       "items": [
         {
-          "name": "filter-varre_1",
+          "name": "filter_varre_1",
           "label": "N/A",
           "keys": [],
           "active": true
         },
         {
-          "name": "filter-varre_2",
+          "name": "filter_varre_2",
           "label": "Lord of Blood",
           "keys": ["varre", "event_1", "event_3", "event_9"],
           "active": false
@@ -51,13 +51,13 @@
       "name": "section_roderika",
       "items": [
         {
-          "name": "filter-roderika_1",
+          "name": "filter_roderika_1",
           "label": "N/A",
           "keys": [],
           "active": true
         },
         {
-          "name": "filter-roderika_2",
+          "name": "filter_roderika_2",
           "label": "Spirit Tuner",
           "keys": ["roderika", "event_1", "event_2"],
           "active": false
@@ -69,13 +69,13 @@
       "name": "section_thops",
       "items": [
         {
-          "name": "filter-thops_1",
+          "name": "filter_thops_1",
           "label": "N/A",
           "keys": [],
           "active": true
         },
         {
-          "name": "filter-thops_2",
+          "name": "filter_thops_2",
           "label": "Return to the Academy",
           "keys": ["thops", "event_1", "event_12"],
           "active": false
@@ -87,13 +87,13 @@
       "name": "section_gurranq",
       "items": [
         {
-          "name": "filter-gurranq_1",
+          "name": "filter_gurranq_1",
           "label": "N/A",
           "keys": [],
           "active": true
         },
         {
-          "name": "filter-gurranq_2",
+          "name": "filter_gurranq_2",
           "label": "D's Replacement",
           "keys": ["gurranq", "event_1"],
           "active": false
@@ -105,13 +105,13 @@
       "name": "section_corhyn",
       "items": [
         {
-          "name": "filter-corhyn_1",
+          "name": "filter_corhyn_1",
           "label": "N/A",
           "keys": [],
           "active": true
         },
         {
-          "name": "filter-corhyn_2",
+          "name": "filter_corhyn_2",
           "label": "Goldmask",
           "keys": ["corhyn", "goldmask", "event_2", "event_10", "event_11", "event_15", "event_17"],
           "active": false
@@ -123,15 +123,141 @@
       "name": "section_yura",
       "items": [
         {
-          "name": "filter-yura_1",
+          "name": "filter_yura_1",
           "label": "N/A",
           "keys": [],
           "active": true
         },
         {
-          "name": "filter-yura_2",
+          "name": "filter_yura_2",
           "label": "Yura",
           "keys": ["yura", "event_12", "event_1", "event_10", "event_14"],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Sellen/Jerren",
+      "name": "section_sellen",
+      "items": [
+        {
+          "name": "filter_sellen_1",
+          "label": "N/A",
+          "keys": [],
+          "active": true
+        },
+        {
+          "name": "filter_sellen_2",
+          "label": "Sellen",
+          "keys": ["sellen-jerren", "sellen", "event_1", "event_18"],
+          "active": false
+        },
+        {
+          "name": "filter_sellen_3",
+          "label": "Jerren",
+          "keys": ["sellen-jerren", "jerren", "event_1", "event_18"],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Patches",
+      "name": "section_patches",
+      "items": [
+        {
+          "name": "filter_patches_1",
+          "label": "N/A",
+          "keys": [],
+          "active": true
+        },
+        {
+          "name": "filter_patches_2",
+          "label": "No Mercy",
+          "keys": ["patches", "patches-no-mercy"],
+          "active": false
+        },
+        {
+          "name": "filter_patches_3",
+          "label": "Forgive Him",
+          "keys": ["patches", "patches-forgive", "event_1", "event_12", "event_6", "event_7", "event_8"],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Rya",
+      "name": "section_rya",
+      "items": [
+        {
+          "name": "filter_rya_1",
+          "label": "N/A",
+          "keys": [],
+          "active": true
+        },
+        {
+          "name": "filter_rya_2",
+          "label": "Forget it",
+          "keys": ["rya", "rya-forget", "boggart-rya", "event_1", "event_10", "event_6"],
+          "active": false
+        },
+        {
+          "name": "filter_rya_3",
+          "label": "Accept Yourself",
+          "keys": ["rya", "rya-acceptance", "boggart-rya", "event_1", "event_10", "event_6", "event_8", "event_7"],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Volcano Manor/Lady Tanith",
+      "name": "section_tanith",
+      "items": [
+        {
+          "name": "filter_tanith_1",
+          "label": "N/A",
+          "keys": [],
+          "active": true
+        },
+        {
+          "name": "filter_tanith_2",
+          "label": "Lord of the Manor",
+          "keys": ["tanith", "event_14", "event_6", "event_7", "event_8", "event_14"],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Blackguard Big Boggart",
+      "name": "section_boggart",
+      "items": [
+        {
+          "name": "filter_boggart_1",
+          "label": "N/A",
+          "keys": [],
+          "active": true
+        },
+        {
+          "name": "filter_boggart_2",
+          "label": "Boiled Prawns",
+          "keys": ["boggart", "boggart-rya", "event_10"],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Knight Bernahl",
+      "name": "section_bernahl",
+      "items": [
+        {
+          "name": "filter_bernahl_1",
+          "label": "N/A",
+          "keys": [],
+          "active": true
+        },
+        {
+          "name": "filter_bernahl_2",
+          "label": "Bernahl",
+          "keys": ["bernahl", "event_6", "event_11", "event_7", "event_16"],
           "active": false
         }
       ]
@@ -198,7 +324,7 @@
       "label": "Complete the Volcano Manor Questline",
       "keys": ["event_7"],
       "precursors": ["event_6"],
-      "successors": [],
+      "successors": ["event_8"],
       "active": false
     },
     {
@@ -260,7 +386,7 @@
       "type": "event",
       "label": "Reach the Mountaintops of the Giants",
       "keys": ["event_14"],
-      "precursors": ["event_13"],
+      "precursors": ["event_13", "event_11", "event_10", "event_4"],
       "successors": [],
       "active": false
     },
@@ -288,6 +414,15 @@
       "label": "Kill Maliketh, The Black Blade",
       "keys": ["event_17"],
       "precursors": ["event_16", "event_15"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "event_18",
+      "type": "event",
+      "label": "Kill Radahn",
+      "keys": ["event_18"],
+      "precursors": ["event_1"],
       "successors": [],
       "active": false
     },
@@ -755,6 +890,498 @@
       "keys": ["yura"],
       "precursors": ["item_yura_5", "event_10"],
       "successors": ["item_yura_7", "event_14"],
+      "active": false
+    },
+
+    {
+      "name": "item_sellen_1",
+      "type": "checkbox",
+      "label": "Talk to Sellen under Waypoint Ruins",
+      "keys": ["sellen-jerren"],
+      "precursors": [],
+      "successors": ["item_sellen_2"],
+      "active": false
+    },
+    {
+      "name": "item_sellen_2",
+      "type": "checkbox",
+      "label": "Go to the Hermit Village in the West part of Mt. Gelmir and find an old man named Primeval Sorceror Azur who has a crystal for a head and gives the spell Comet Azur",
+      "keys": ["sellen-jerren"],
+      "precursors": ["item_sellen_1", "event_10", "event_6"],
+      "successors": ["item_sellen_3"],
+      "active": false
+    },
+    {
+      "name": "item_sellen_3",
+      "type": "checkbox",
+      "label": "Talk to Sellen",
+      "keys": ["sellen-jerren"],
+      "precursors": ["item_sellen_2"],
+      "successors": ["item_sellen_4"],
+      "active": false
+    },
+    {
+      "name": "item_sellen_4",
+      "type": "checkbox",
+      "label": "Go through Sellia Hideaway and at the bottom you will find a seal guarded by a sorceror. Kill him and open the seal then talk to Master Lusat",
+      "keys": ["sellen-jerren"],
+      "precursors": ["item_sellen_3"],
+      "successors": ["item_sellen_5"],
+      "active": false
+    },
+    {
+      "name": "item_sellen_5",
+      "type": "checkbox",
+      "label": "After killing Radahn speak to Witch Hunter Jerren",
+      "keys": ["sellen-jerren"],
+      "precursors": ["item_sellen_4", "event_1", "event_18"],
+      "successors": ["item_sellen_6"],
+      "active": false
+    },
+    {
+      "name": "item_sellen_6",
+      "type": "checkbox",
+      "label": "Speak to Sellen",
+      "keys": ["sellen-jerren"],
+      "precursors": ["item_sellen_5"],
+      "successors": ["item_sellen_7"],
+      "active": false
+    },
+    {
+      "name": "item_sellen_7",
+      "type": "checkbox",
+      "label": "Head to Witchbane Ruins and talk to Sellen",
+      "keys": ["sellen-jerren"],
+      "precursors": ["item_sellen_6"],
+      "successors": ["item_sellen_8"],
+      "active": false
+    },
+    {
+      "name": "item_sellen_8",
+      "type": "checkbox",
+      "label": "Go through the Illusory wall to find Sellen and interact with her",
+      "keys": ["sellen-jerren"],
+      "precursors": ["item_sellen_7"],
+      "successors": ["item_sellen_9"],
+      "active": false
+    },
+    {
+      "name": "item_sellen_9",
+      "type": "checkbox",
+      "label": "Return to Sellen in Witchbane Ruins and talk to Witch Hunter Jerren",
+      "keys": ["sellen-jerren"],
+      "precursors": ["item_sellen_8"],
+      "successors": ["item_sellen_10"],
+      "active": false
+    },
+    {
+      "name": "item_sellen_10",
+      "type": "checkbox",
+      "label": "Go to the Grand Library Grace and walk out to find 2 Summon Signs. Summon Sellen",
+      "keys": ["sellen"],
+      "precursors": ["item_sellen_9", "event_12", "event_5"],
+      "successors": ["item_sellen_11"],
+      "active": false
+    },
+    {
+      "name": "item_sellen_11",
+      "type": "checkbox",
+      "label": "Talk to Sellen and reload the area to get her helmet",
+      "keys": ["sellen"],
+      "precursors": ["item_sellen_10"],
+      "successors": ["item_sellen_11"],
+      "active": false
+    },
+    {
+      "name": "item_sellen_12",
+      "type": "checkbox",
+      "label": "Revisit Azur and Lusat to get their helmets",
+      "keys": ["sellen"],
+      "precursors": ["item_sellen_11"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_sellen_13",
+      "type": "checkbox",
+      "label": "Go to the Grand Library Grace and walk out to find 2 Summon Signs. Summon Jerren",
+      "keys": ["jerren"],
+      "precursors": ["item_sellen_9"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_tanith_1",
+      "type": "checkbox",
+      "label": "Talk to Tanith in Volcano Manor",
+      "keys": ["tanith"],
+      "precursors": ["event_6", "item_rya_3", "item_patches_8"],
+      "successors": ["item_tanith_2"],
+      "active": false
+    },
+    {
+      "name": "item_tanith_2",
+      "type": "checkbox",
+      "label": "Complete your first Volcano Manor contract, Old Knight Istvan",
+      "keys": ["tanith"],
+      "precursors": ["item_tanith_1"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_tanith_3",
+      "type": "checkbox",
+      "label": "Complete your first Volcano Manor contract, Old Knight Istvan",
+      "keys": ["tanith"],
+      "precursors": ["item_tanith_2"],
+      "successors": ["item_tanith_4"],
+      "active": false
+    },
+    {
+      "name": "item_tanith_4",
+      "type": "checkbox",
+      "label": "Complete your second Volcano Manor contract, Rileigh the Idle",
+      "keys": ["tanith"],
+      "precursors": ["item_tanith_3"],
+      "successors": ["item_tanith_5"],
+      "active": false
+    },
+    {
+      "name": "item_tanith_5",
+      "type": "checkbox",
+      "label": "Complete your third Volcano Manor contract, Juno Hoslow",
+      "keys": ["tanith"],
+      "precursors": ["item_tanith_4", "event_14"],
+      "successors": ["item_tanith_6", "event_7", "event_8"],
+      "active": false
+    },
+    {
+      "name": "item_tanith_6",
+      "type": "checkbox",
+      "label": "Talk to Lady Tanith in Rykard's Boss Room",
+      "keys": ["tanith"],
+      "precursors": ["event_7", "event_8", "item_tanith_5"],
+      "successors": ["item_patches_12"],
+      "active": false
+    },
+
+    {
+      "name": "item_boggart_1",
+      "type": "checkbox",
+      "label": "Head to Boilprawn Shack and buy Rya's necklace",
+      "keys": ["boggart-rya"],
+      "precursors": ["item_rya_1"],
+      "successors": ["item_boggart_2", "item_rya_2"],
+      "active": false
+    },
+    {
+      "name": "item_boggart_2",
+      "type": "checkbox",
+      "label": "Buy some boiled prawns from Boggart",
+      "keys": ["boggart"],
+      "precursors": ["item_boggart_1"],
+      "successors": ["item_boggart_3"],
+      "active": false
+    },
+    {
+      "name": "item_boggart_3",
+      "type": "checkbox",
+      "label": "Meet Boggart by the Leyndell moat, but some crab then talk to him",
+      "keys": ["boggart"],
+      "precursors": ["item_boggart_2", "event_10"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_rya_1",
+      "type": "checkbox",
+      "label": "Talk to Rya and agree to get her necklace back",
+      "keys": ["boggart-rya"],
+      "precursors": ["event_1"],
+      "successors": ["item_boggart_1"],
+      "active": false
+    },
+    {
+      "name": "item_rya_2",
+      "type": "checkbox",
+      "label": "Return the necklace to Rya",
+      "keys": ["boggart-rya"],
+      "precursors": ["item_boggart_1", "item_rya_1"],
+      "successors": ["item_rya_3"],
+      "active": false
+    },
+    {
+      "name": "item_rya_3",
+      "type": "checkbox",
+      "label": "Meet Rya in the Altus Plataeu to get a teleport to Volcano Manor",
+      "keys": ["rya"],
+      "precursors": ["item_rya_2", "event_10"],
+      "successors": ["event_6", "item_rya_4"],
+      "active": false
+    },
+    {
+      "name": "item_rya_4",
+      "type": "checkbox",
+      "label": "Talk to Rya in Volcano Manor",
+      "keys": ["rya"],
+      "precursors": ["item_rya_3", "event_6"],
+      "successors": ["item_rya_5"],
+      "active": false
+    },
+    {
+      "name": "item_rya_5",
+      "type": "checkbox",
+      "label": "Reload the area and talk to Rya in Volcano Manor in her snake form, then talk to Lady Tanith",
+      "keys": ["rya"],
+      "precursors": ["item_rya_4"],
+      "successors": ["item_rya_6"],
+      "active": false
+    },
+    {
+      "name": "item_rya_6",
+      "type": "checkbox",
+      "label": "Reload the area and talk to Rya in Volcano Manor in her human form, and explore the area behind the illusory wall until you find the prison town church grace",
+      "keys": ["rya"],
+      "precursors": ["item_rya_5"],
+      "successors": ["item_rya_7"],
+      "active": false
+    },
+    {
+      "name": "item_rya_7",
+      "type": "checkbox",
+      "label": "Tell Rya What you have seen",
+      "keys": ["rya"],
+      "precursors": ["item_rya_6"],
+      "successors": ["item_rya_8"],
+      "active": false
+    },
+    {
+      "name": "item_rya_8",
+      "type": "checkbox",
+      "label": "Defeat Godskin Noble in Temple of Eiglay to get the Serpent's Amnion, give it to Rya",
+      "keys": ["rya"],
+      "precursors": ["item_rya_7"],
+      "successors": ["item_rya_9"],
+      "active": false
+    },
+    {
+      "name": "item_rya_9",
+      "type": "checkbox",
+      "label": "Speak to Lady Tanith to recieve the Tonic of Forgetfulness",
+      "keys": ["rya"],
+      "precursors": ["item_rya_8"],
+      "successors": ["item_rya_10"],
+      "active": false
+    },
+    {
+      "name": "item_rya_10",
+      "type": "checkbox",
+      "label": "Find Rya past the Temple of Eiglay",
+      "keys": ["rya"],
+      "precursors": ["item_rya_9"],
+      "successors": ["item_rya_11"],
+      "active": false
+    },
+    {
+      "name": "item_rya_11",
+      "type": "checkbox",
+      "label": "Give Rya the Tonic and return to Lady Tanith",
+      "keys": ["rya-forget"],
+      "precursors": ["item_rya_10"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_rya_12",
+      "type": "checkbox",
+      "label": "Either kill Rya or let her live",
+      "keys": ["rya-acceptance"],
+      "precursors": ["item_rya_10"],
+      "successors": ["item_rya_13"],
+      "active": false
+    },
+    {
+      "name": "item_rya_13",
+      "type": "checkbox",
+      "label": "After Rykard, return to Rya and talk to her, repload the area and collect her items",
+      "keys": ["rya-acceptance"],
+      "precursors": ["event_8", "event_7", "item_rya_12"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_patches_1",
+      "type": "checkbox",
+      "label": "At the end of Murkwater Cave, open the chest to trigger the fight",
+      "keys": ["patches"],
+      "precursors": [],
+      "successors": ["item_patches_2"],
+      "active": false
+    },
+    {
+      "name": "item_patches_2",
+      "type": "checkbox",
+      "label": "Kill Patches",
+      "keys": ["patches", "patches-no-mercy"],
+      "precursors": ["item_patches_1"],
+      "successors": ["item_patches_3"],
+      "active": false
+    },
+    {
+      "name": "item_patches_3",
+      "type": "checkbox",
+      "label": "Be careful not to kill Patches!",
+      "keys": ["patches", "patches-forgive"],
+      "precursors": ["item_patches_1"],
+      "successors": ["item_patches_4"],
+      "active": false
+    },
+    {
+      "name": "item_patches_4",
+      "type": "checkbox",
+      "label": "Reload the area and talk to patches to access his shop",
+      "keys": ["patches", "patches-forgive"],
+      "precursors": ["item_patches_3"],
+      "successors": ["item_patches_5"],
+      "active": false
+    },
+    {
+      "name": "item_patches_5",
+      "type": "checkbox",
+      "label": "Talk to patches again, reload the area, then open the chest he gives you",
+      "keys": ["patches", "patches-forgive"],
+      "precursors": ["item_patches_4"],
+      "successors": ["item_patches_6"],
+      "active": false
+    },
+    {
+      "name": "item_patches_6",
+      "type": "checkbox",
+      "label": "Return to Patches and talk to him again",
+      "keys": ["patches", "patches-forgive"],
+      "precursors": ["item_patches_5"],
+      "successors": ["item_patches_7"],
+      "active": false
+    },
+    {
+      "name": "item_patches_7",
+      "type": "checkbox",
+      "label": "Talk to Patches on Scenic Isle",
+      "keys": ["patches", "patches-forgive"],
+      "precursors": ["item_patches_6", "event_1"],
+      "successors": ["item_patches_8"],
+      "active": false
+    },
+    {
+      "name": "item_patches_8",
+      "type": "checkbox",
+      "label": "Follow Patches 'Advice' and get captured by the Virgin Abductor at the bottom of the Academy",
+      "keys": ["patches", "patches-forgive"],
+      "precursors": ["item_patches_7", "event_12", "item_rya_3"],
+      "successors": ["item_patches_9"],
+      "active": false
+    },
+    {
+      "name": "item_patches_8",
+      "type": "checkbox",
+      "label": "Talk to Patches in Volcano Manor, and recieve his letter",
+      "keys": ["patches", "patches-forgive"],
+      "precursors": ["item_patches_7", "event_12", "item_rya_3", "event_6"],
+      "successors": ["item_patches_9"],
+      "active": false
+    },
+    {
+      "name": "item_patches_9",
+      "type": "checkbox",
+      "label": "Kill Great Horned Tragoth, and return to patches",
+      "keys": ["patches", "patches-forgive"],
+      "precursors": ["item_patches_8"],
+      "successors": ["item_patches_9", "event_7", "event_8"],
+      "active": false
+    },
+    {
+      "name": "item_patches_10",
+      "type": "checkbox",
+      "label": "Find Patches in the Shaded Castle",
+      "keys": ["patches", "patches-forgive"],
+      "precursors": ["item_patches_9", "event_7", "event_8"],
+      "successors": ["item_patches_11"],
+      "active": false
+    },
+    {
+      "name": "item_patches_11",
+      "type": "checkbox",
+      "label": "Find Patches in the Shaded Castle, take the Dancer's Castonettes, then kill him (may change if more is discovered)",
+      "keys": ["patches", "patches-forgive"],
+      "precursors": ["item_patches_10"],
+      "successors": ["item_patches_12"],
+      "active": false
+    },
+    {
+      "name": "item_patches_12",
+      "type": "checkbox",
+      "label": "Go to Rykard's Boss room and give Tanith the Castonettes",
+      "keys": ["patches", "patches-forgive", "tanith"],
+      "precursors": ["item_patches_10"],
+      "successors": ["item_patches_12"],
+      "active": false
+    },
+
+    {
+      "name": "item_bernahl_1",
+      "type": "checkbox",
+      "label": "Talk to Knight Bernahl in the Warmaster's Shack during the day",
+      "keys": ["bernahl"],
+      "precursors": ["event_6"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_bernahl_2",
+      "type": "checkbox",
+      "label": "Talk to Knight Bernahl at Volcano Manor",
+      "keys": ["bernahl"],
+      "precursors": ["item_bernahl_1", "event_6"],
+      "successors": ["item_bernahl_2"],
+      "active": false
+    },
+    {
+      "name": "item_bernahl_3",
+      "type": "checkbox",
+      "label": "Talk to Knight Bernahl to get the Letter to Bernahl",
+      "keys": ["bernahl"],
+      "precursors": ["item_bernahl_2"],
+      "successors": ["item_bernahl_4", "event_11"],
+      "active": false
+    },
+    {
+      "name": "item_bernahl_4",
+      "type": "checkbox",
+      "label": "Join with Bernahl to fight the two tarnished",
+      "keys": ["bernahl"],
+      "precursors": ["item_bernahl_3", "event_11"],
+      "successors": ["item_bernahl_5"],
+      "active": false
+    },
+    {
+      "name": "item_bernahl_5",
+      "type": "checkbox",
+      "label": "Return to Bernahl at Volcano Manor",
+      "keys": ["bernahl"],
+      "precursors": ["item_bernahl_4"],
+      "successors": ["item_bernahl_6", "event_7", "event_16"],
+      "active": false
+    },
+    {
+      "name": "item_bernahl_6",
+      "type": "checkbox",
+      "label": "Kill Bernahl when he invades in Crumbling Farum Azula",
+      "keys": ["bernahl"],
+      "precursors": ["item_bernahl_5", "event_7", "event_16"],
+      "successors": ["item_bernahl_7"],
       "active": false
     }
   ]

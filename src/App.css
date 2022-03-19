@@ -8,6 +8,7 @@
 
 .filters {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filters__section {
@@ -16,6 +17,7 @@
   display: inline-block;
   margin-bottom: 1rem;
   margin-right: 1rem;
+  width: 225px;
 }
 
 .filters__title {
