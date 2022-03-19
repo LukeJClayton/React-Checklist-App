@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import { setLocalStorage, getLocalStorage } from '../js/Storage.js';
-import { ProfileContext } from "../context/Profile.js";
 import { FilterContext } from "../context/Filter.js";
 import { ItemsContext } from "../context/Items.js";
 import { useUpdateFilterState, filterItems } from "../js/Filter.js";
@@ -29,7 +28,6 @@ export function useLoadProfile () {
 }
 
 export function useSaveProfile () {
-  const [profileContext, setProfileContext] = useContext(ProfileContext);
   const filterContext = useContext(FilterContext).filters;
   const itemsContext =  useContext(ItemsContext).items;
   const profileKey = 'userProfile';
@@ -39,6 +37,30 @@ export function useSaveProfile () {
   }
 
   return saveProfile;
+}
+
+export function useClearProfile () {
+  const profileKey = 'userProfile';
+
+  function clearProfile () {
+    setLocalStorage(profileKey, undefined)
+  }
+
+  return clearProfile;
+}
+
+export function useRefreshProfile () {
+  const clearProfile = useClearProfile();
+  const loadProfile = useLoadProfile();
+
+  function refreshProfile () {
+    clearProfile();
+    setTimeout(function() {
+      window.location.reload();
+    }, 100)
+  }
+
+  return refreshProfile;
 }
 
 function formatFilterData (data) {

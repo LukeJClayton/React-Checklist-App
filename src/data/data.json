@@ -1285,25 +1285,25 @@
       "active": false
     },
     {
-      "name": "item_patches_8",
+      "name": "item_patches_9",
       "type": "checkbox",
       "label": "Talk to Patches in Volcano Manor, and recieve his letter",
       "keys": ["patches", "patches-forgive"],
-      "precursors": ["item_patches_7", "event_12", "item_rya_3", "event_6"],
-      "successors": ["item_patches_9"],
-      "active": false
-    },
-    {
-      "name": "item_patches_9",
-      "type": "checkbox",
-      "label": "Kill Great Horned Tragoth, and return to patches",
-      "keys": ["patches", "patches-forgive"],
-      "precursors": ["item_patches_8"],
-      "successors": ["item_patches_9", "event_7", "event_8"],
+      "precursors": ["item_patches_8", "event_12", "item_rya_3", "event_6"],
+      "successors": ["item_patches_10"],
       "active": false
     },
     {
       "name": "item_patches_10",
+      "type": "checkbox",
+      "label": "Kill Great Horned Tragoth, and return to patches",
+      "keys": ["patches", "patches-forgive"],
+      "precursors": ["item_patches_9"],
+      "successors": ["item_patches_11", "event_7", "event_8"],
+      "active": false
+    },
+    {
+      "name": "item_patches_11",
       "type": "checkbox",
       "label": "Find Patches in the Shaded Castle",
       "keys": ["patches", "patches-forgive"],
@@ -1312,21 +1312,21 @@
       "active": false
     },
     {
-      "name": "item_patches_11",
+      "name": "item_patches_12",
       "type": "checkbox",
       "label": "Find Patches in the Shaded Castle, take the Dancer's Castonettes, then kill him (may change if more is discovered)",
       "keys": ["patches", "patches-forgive"],
-      "precursors": ["item_patches_10"],
-      "successors": ["item_patches_12"],
+      "precursors": ["item_patches_11"],
+      "successors": ["item_patches_13"],
       "active": false
     },
     {
-      "name": "item_patches_12",
+      "name": "item_patches_13",
       "type": "checkbox",
       "label": "Go to Rykard's Boss room and give Tanith the Castonettes",
       "keys": ["patches", "patches-forgive", "tanith"],
-      "precursors": ["item_patches_10"],
-      "successors": ["item_patches_12"],
+      "precursors": ["item_patches_11"],
+      "successors": [],
       "active": false
     },
 
