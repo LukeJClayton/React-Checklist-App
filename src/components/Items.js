@@ -3,13 +3,16 @@ import { ItemsContext } from '../context/Items'
 import { useLoadProfile, useSaveProfile } from "../js/Profile.js";
 import { useUpdateItemState } from '../js/Items.js';
 
-
 function ItemList(props) {
   var items = []
   for (var i = 0; i < props.data.length; i++) {
-    switch(props.data[i].type) {
+    var item = props.data[i];
+    switch(item.type) {
       case 'checkbox':
-        items.push(<Checkbox data={ props.data[i] } key={i}/>)
+        items.push(<Checkbox name={ item.name } label={ item.label } key={i} />)
+        break;
+      case 'event':
+        items.push(<Event name={ item.name } label={ item.label } key={i}/>)
         break;
     }
   }
@@ -21,22 +24,34 @@ function ItemList(props) {
   );
 }
 
-function Checkbox(props) {
+function Event({ name, label }) {
   const { updateItemState } = useUpdateItemState();
   const { items } = useContext(ItemsContext);
 
   return (
-    <div className="items__checkbox js-filterable-item" data-name={ props.data.name } data-keys={ props.data.keys.join(',') }>
-      <label>
-        { props.data.label }
+    <div className="items__event js-filterable-item" data-name={ name }>
+      { label }
+    </div>
+  )
+}
+
+function Checkbox({ name, label }) {
+  const { updateItemState } = useUpdateItemState();
+  const { items } = useContext(ItemsContext);
+
+  return (
+    <div className="items__checkbox js-filterable-item" data-name={ name }>
+      <label className="items_checkbox-label">
+        { label }
         <input
+          className="items_checkbox-input"
           type="checkbox"
-          name={ props.data.name }
-          value={ props.data.name }
+          name={ name }
+          value={ name }
           onChange={ updateItemState }
           checked={
             items
-              .find(f => f.name === props.data.name)
+              .find(f => f.name === name)
               .active
           }
         />

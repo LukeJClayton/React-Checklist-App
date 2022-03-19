@@ -1,80 +1,360 @@
 {
-	"title": "Elden Ring Quest Checklist",
-	"filters": [
-		{
-			"title": "Boc, the Seamster",
-			"name": "boc",
-			"items": [
-				{
-					"name": "filter_boc_1",
-					"label": "N/A",
-					"keys": [],
-					"description": "test1",
-					"active": true
-				},
-				{
-					"name": "filter_boc_2",
-					"label": "Boc, Rebirth",
-					"keys": ["boc", "boc-rebirth"],
-					"description": "test2",
-					"active": false
-				},
-				{
-					"name": "filter_boc_3",
-					"label": "Boc, Beauty",
-					"keys": ["boc", "boc-beauty"],
-					"description": "test3",
-					"active": false
-				}
-			]
-		},
-		{
-			"title": "White Faced Varre",
-			"name": "varre",
-			"items": [
-				{
-					"name": "filter-varre_1",
-					"label": "N/A",
-					"keys": [],
-					"active": true
-				},
-				{
-					"name": "filter-varre_2",
-					"label": "Lord of Blood",
-					"keys": ["varre"],
-					"active": false
-				}
-			]
-		}
-	],
-	"items": [
-		{
+  "title": "Elden Ring Quest Checklist",
+  "filters": [
+    {
+      "title": "Boc, the Seamster",
+      "name": "section_boc",
+      "items": [
+        {
+          "name": "filter_boc_1",
+          "label": "N/A",
+          "keys": [],
+          "description": "test1",
+          "active": true
+        },
+        {
+          "name": "filter_boc_2",
+          "label": "Rebirth",
+          "keys": ["boc", "boc-rebirth", "event_1", "event_2", "event_5",  "event_10", "event_11", "event_4"],
+          "description": "test2",
+          "active": false
+        },
+        {
+          "name": "filter_boc_3",
+          "label": "Beauty",
+          "keys": ["boc", "boc-beauty", "event_1", "event_2", "event_6", "event_10", "event_11", "event_4"],
+          "description": "test3",
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "White Faced Varre",
+      "name": "section_varre",
+      "items": [
+        {
+          "name": "filter-varre_1",
+          "label": "N/A",
+          "keys": [],
+          "active": true
+        },
+        {
+          "name": "filter-varre_2",
+          "label": "Lord of Blood",
+          "keys": ["varre", "event_1", "event_3", "event_9"],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Roderika",
+      "name": "section_roderika",
+      "items": [
+        {
+          "name": "filter-roderika_1",
+          "label": "N/A",
+          "keys": [],
+          "active": true
+        },
+        {
+          "name": "filter-roderika_2",
+          "label": "Spirit Tuner",
+          "keys": ["roderika", "event_1", "event_2"],
+          "active": false
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "name": "event_1",
+      "type": "event",
+      "label": "Leave Limgrave, light a bonfire in Liurnia/Caelid/Beyond",
+      "keys": ["event_1"],
+      "precursors": ["item_roderika_3", "item_boc_3"],
+      "active": false
+    },
+    {
+      "name": "event_2",
+      "type": "event",
+      "label": "Visit Roundtable Hold",
+      "keys": ["event_2"],
+      "precursors": ["item_roderika_3"],
+      "active": false
+    },
+    {
+      "name": "event_3",
+      "type": "event",
+      "label": "Kill Godrick the Grafted",
+      "keys": ["event_3"],
+      "precursors": [],
+      "active": false
+    },
+    {
+      "name": "event_4",
+      "type": "event",
+      "label": "Aquire a second Great Rune",
+      "keys": ["event_4"],
+      "precursors": ["event_1"],
+      "active": false
+    },
+    {
+      "name": "event_5",
+      "type": "event",
+      "label": "Kill Rennala",
+      "keys": ["event_5"],
+      "precursors": ["event_1"],
+      "active": false
+    },
+    {
+      "name": "event_6",
+      "type": "event",
+      "label": "Visit Volcano Manor",
+      "keys": ["event_6", "event_10"],
+      "precursors": ["event_1"],
+      "active": false
+    },
+    {
+      "name": "event_7",
+      "type": "event",
+      "label": "Complete the Volcano Manor Questline",
+      "keys": ["event_7"],
+      "precursors": ["event_6"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "event_8",
+      "type": "event",
+      "label": "Kill Rykard",
+      "keys": ["event_8"],
+      "precursors": ["event_6"],
+      "active": false
+    },
+    {
+      "name": "event_9",
+      "type": "event",
+      "label": "Visit Mohgwyn's Palace",
+      "keys": ["event_9"],
+      "precursors": ["event_1"],
+      "active": false
+    },
+    {
+      "name": "event_10",
+      "type": "event",
+      "label": "Reach the Altus Plataeu",
+      "keys": ["event_10"],
+      "precursors": [],
+      "active": false
+    },
+    {
+      "name": "event_11",
+      "type": "event",
+      "label": "Reach the Royal Capital",
+      "keys": ["event_11"],
+      "precursors": ["event_4", "event_10"],
+      "active": false
+    },
+
+    {
+      "name": "item_roderika_1",
+      "type": "checkbox",
+      "label": "Meet Roderika at the Stormhill Shack",
+      "keys": ["roderika"],
+      "precursors": [],
+      "active": false
+    },
+    {
+      "name": "item_roderika_2",
+      "type": "checkbox",
+      "label": "Find the Chrysalid's Memento deep in Stormveil Castle",
+      "keys": ["roderika"],
+      "precursors": ["item_roderika_1"],
+      "active": false
+    },
+    {
+      "name": "item_roderika_3",
+      "type": "checkbox",
+      "label": "Return the Memento to Roderika",
+      "keys": ["roderika"],
+      "precursors": ["item_roderika_2"],
+      "active": false
+    },
+    {
+      "name": "item_roderika_4",
+      "type": "checkbox",
+      "label": "Go to Roderika's previous location at Stormhill Shack",
+      "keys": ["roderika"],
+      "precursors": ["item_roderika_3", "event_2"],
+      "active": false
+    },
+    {
+      "name": "item_roderika_5",
+      "type": "checkbox",
+      "label": "Talk to Rodericka and Master Hewg until she moves to sitting near him",
+      "keys": ["roderika"],
+      "precursors": ["item_roderika_4"],
+      "active": false
+    },
+    {
+      "name": "item_roderika_6",
+      "type": "checkbox",
+      "label": "Go back to where you found the Memento for a Crimson Hood",
+      "keys": ["roderika"],
+      "precursors": ["item_roderika_5"],
+      "active": false
+    },
+    {
       "name": "item_boc_1",
-			"type": "checkbox",
-			"label": "Hit the talking tree and talk to Boc",
-			"keys": ["boc"],
+      "type": "checkbox",
+      "label": "Hit the talking tree and talk to Boc",
+      "keys": ["boc"],
+      "precursors": [],
       "active": false
-		},
-		{
+    },
+    {
       "name": "item_boc_2",
-			"type": "checkbox",
-			"label": "FILTER TEST 1, Rebirth",
-			"keys": ["boc-rebirth"],
+      "type": "checkbox",
+      "label": "Go to Coastal Cave, talk to Boc",
+      "keys": ["boc"],
+      "precursors": ["item_boc_1"],
       "active": false
-		},
-		{
+    },
+    {
       "name": "item_boc_3",
-			"type": "checkbox",
-			"label": "FILTER TEST 2, Beauty",
-			"keys": ["boc-beauty"],
+      "type": "checkbox",
+      "label": "Kill the boss and return the Sewing Needle to Boc",
+      "keys": ["boc"],
+      "precursors": ["item_boc_2"],
       "active": false
-		},
-		{
+    },
+    {
+      "name": "item_boc_4",
+      "type": "checkbox",
+      "label": "Meet Boc next to the the Lake-Facing Cliffs Grace and talk to him",
+      "keys": ["boc"],
+      "precursors": ["item_boc_3", "event_1"],
+      "active": false
+    },
+    {
+      "name": "item_boc_5",
+      "type": "checkbox",
+      "label": "Grab the Gold Sewing Needle from the Church of Vows",
+      "keys": ["boc"],
+      "precursors": ["item_boc_4"],
+      "active": false
+    },
+    {
+      "name": "item_boc_6",
+      "type": "checkbox",
+      "label": "Buy a piece of boss gear from Enia, and give the Gold Needle to Boc",
+      "keys": ["boc"],
+      "precursors": ["item_boc_5", "event_2"],
+      "active": false
+    },
+    {
+      "name": "item_boc_7",
+      "type": "checkbox",
+      "label": "Meet Boc at the East Capital Rampart in Leyndell Royal Capital",
+      "keys": ["boc"],
+      "precursors": ["item_boc_6", "event_11"],
+      "active": false
+    },
+    {
+      "name": "item_boc_8",
+      "type": "checkbox",
+      "label": "Talk to Boc until he says he is ugly, offer him a Larval Tear",
+      "keys": ["boc", "boc-rebirth"],
+      "precursors": ["item_boc_7", "event_5"],
+      "active": false
+    },
+    {
+      "name": "item_boc_9",
+      "type": "checkbox",
+      "label": "Talk to Boc in Renalla's boss room, reload the area again to find him dead",
+      "keys": ["boc", "boc-rebirth"],
+      "precursors": ["item_boc_8"],
+      "active": false
+    },
+    {
+      "name": "item_boc_10",
+      "type": "checkbox",
+      "label": "Visit Hermit Village to find the Prattling-Pate: You're Beautiful",
+      "keys": ["boc", "boc-beauty"],
+      "precursors": ["item_boc_7", "event_6"],
+      "active": false
+    },
+    {
+      "name": "item_boc_11",
+      "type": "checkbox",
+      "label": "Talk to Boc until he says he is ugly, use the Prattling-Pate: You're Beautiful",
+      "keys": ["boc", "boc-beauty"],
+      "precursors": ["item_boc_10"],
+      "active": false
+    },
+    {
       "name": "item_varre_1",
-			"type": "checkbox",
-			"label": "Talk to White Faced Varre (Maidenless lmao)",
-			"keys": ["varre"],
+      "type": "checkbox",
+      "label": "Talk to White Faced Varre by the First Step",
+      "keys": ["varre"],
+      "precursors": [],
       "active": false
-		}
-	]
+    },
+    {
+      "name": "item_varre_2",
+      "type": "checkbox",
+      "label": "Talk to White Faced Varre at Rose Church and recieve Festering Bloody Fingers",
+      "keys": ["varre"],
+      "precursors": ["item_varre_1", "event_1", "event_3"],
+      "active": false
+    },
+    {
+      "name": "item_varre_3",
+      "type": "checkbox",
+      "label": "Invade three players",
+      "keys": ["varre"],
+      "precursors": ["item_varre_2"],
+      "active": false
+    },
+    {
+      "name": "item_varre_4",
+      "type": "checkbox",
+      "label": "Return to Varre to recieve the Lord of Blood's Favor",
+      "keys": ["varre"],
+      "precursors": ["item_varre_3"],
+      "active": false
+    },
+    {
+      "name": "item_varre_5",
+      "type": "checkbox",
+      "label": "Interact with the corpse at the Church of Inhibition or the corpse at Chapel of Anticipation",
+      "keys": ["varre"],
+      "precursors": ["item_varre_4"],
+      "active": false
+    },
+    {
+      "name": "item_varre_6",
+      "type": "checkbox",
+      "label": "Return to Varre to gain the Bloody Finger and the Pureblood Knights Medal",
+      "keys": ["varre"],
+      "precursors": ["item_varre_5"],
+      "active": false
+    },
+    {
+      "name": "item_varre_7",
+      "type": "checkbox",
+      "label": "Kill the invader in Mohgwyn's Palace three times",
+      "keys": ["varre"],
+      "precursors": ["item_varre_6", "event_9"],
+      "active": false
+    },
+    {
+      "name": "item_varre_8",
+      "type": "checkbox",
+      "label": "Duel White Faced Varre",
+      "keys": ["varre"],
+      "precursors": ["item_varre_7"],
+      "active": false
+    }
+  ]
 }

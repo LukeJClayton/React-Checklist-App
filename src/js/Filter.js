@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { FilterContext } from "../context/Filter.js";
 import { ItemsContext } from "../context/Items.js";
 import { useSaveProfile } from "../js/Profile.js";
+import { sortItems } from "../js/Items.js";
 
 const data = require('../data/data.json')
 
@@ -42,10 +43,14 @@ export function filterItems (filterState, setItems, saveProfile) {
 
   let filteredData = data.items.filter(function(item) {
     for (let i = 0; i <= keys.length; i++) {
-      if (item.keys.includes(keys[i])) return true;
+      if (item.keys.every(value => { return keys.includes(value) })) {
+        return true;
+      }
     }
   })
 
-  setItems(filteredData);
-  saveProfile(filterState, filteredData);
+  const sortedData = sortItems(filteredData)
+
+  setItems(sortedData);
+  saveProfile(filterState, sortedData);
 }

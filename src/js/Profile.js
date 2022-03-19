@@ -3,7 +3,7 @@ import { setLocalStorage, getLocalStorage } from '../js/Storage.js';
 import { ProfileContext } from "../context/Profile.js";
 import { FilterContext } from "../context/Filter.js";
 import { ItemsContext } from "../context/Items.js";
-import { useUpdateFilterState } from "../js/Filter.js";
+import { useUpdateFilterState, filterItems } from "../js/Filter.js";
 import { useUpdateItemState } from "../js/Items.js";
 
 export function useLoadProfile () {
@@ -21,6 +21,7 @@ export function useLoadProfile () {
       setItems(profileData.items);
     } else {
       saveProfile();
+      filterItems(filters, setItems, saveProfile);
     }
   }
 

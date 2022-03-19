@@ -20,3 +20,36 @@ export function useUpdateItemState (e) {
 
   return { updateItemState };
 }
+
+export function sortItems (items) {
+  let map = {}
+    , result = []
+    , visited = {}
+    , reverseItems = items.slice().reverse();
+
+  reverseItems.forEach(function (item) {
+    map[item.name]  = item;
+  });
+
+  reverseItems.forEach(function (item) {
+    if (!visited[item.name] && item) {
+      sort_util(item);
+    }
+  });
+
+  function sort_util (obj) {
+    visited[obj.name] = true;
+
+    obj.precursors.forEach(function (dep) {
+      if (!visited[dep] && map[dep]) {
+        sort_util(map[dep]);
+      } 
+    });
+
+    result.push(obj);
+  }
+
+  return result;
+}
+
+
