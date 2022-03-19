@@ -141,7 +141,7 @@
       "type": "event",
       "label": "Kill Godrick the Grafted",
       "keys": ["event_3"],
-      "precursors": [],
+      "precursors": ["event_2"],
       "active": false
     },
     {
