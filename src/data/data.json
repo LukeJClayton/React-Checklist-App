@@ -117,6 +117,24 @@
           "active": false
         }
       ]
+    },
+    {
+      "title": "Bloody Finger Hunter Yura",
+      "name": "section_yura",
+      "items": [
+        {
+          "name": "filter-yura_1",
+          "label": "N/A",
+          "keys": [],
+          "active": true
+        },
+        {
+          "name": "filter-yura_2",
+          "label": "Yura",
+          "keys": ["yura", "event_12", "event_1", "event_10", "event_14"],
+          "active": false
+        }
+      ]
     }
   ],
   "items": [
@@ -682,6 +700,61 @@
       "keys": ["corhyn"],
       "precursors": ["item_corhyn_11", "event_15", "event_17"],
       "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_yura_1",
+      "type": "checkbox",
+      "label": "Talk to Yura South-East of the lake in Limgrave under an overpass",
+      "keys": ["yura"],
+      "precursors": [],
+      "successors": ["item_yura_2"],
+      "active": false
+    },
+    {
+      "name": "item_yura_2",
+      "type": "checkbox",
+      "label": "Kill Flying Dragon Agheel nad return to Yura",
+      "keys": ["yura"],
+      "precursors": ["item_yura_1"],
+      "successors": ["item_yura_3"],
+      "active": false
+    },
+    {
+      "name": "item_yura_3",
+      "type": "checkbox",
+      "label": "Go north of lake agheel and kill the invader Bloody Finger Nerijus with Yura",
+      "keys": ["yura"],
+      "precursors": ["item_yura_2"],
+      "successors": ["item_yura_4"],
+      "active": false
+    },
+    {
+      "name": "item_yura_4",
+      "type": "checkbox",
+      "label": "Go north of where you were invaded by Nerijus to find Yura. Talk with him",
+      "keys": ["yura"],
+      "precursors": ["item_yura_3"],
+      "successors": ["item_yura_5"],
+      "active": false
+    },
+    {
+      "name": "item_yura_5",
+      "type": "checkbox",
+      "label": "Interact with the red summon sign past the seal at Raya Lucaria Academy, talk with Yura after the fight",
+      "keys": ["yura"],
+      "precursors": ["event_12", "event_1", "item_yura_4"],
+      "successors": ["item_yura_6"],
+      "active": false
+    },
+    {
+      "name": "item_yura_6",
+      "type": "checkbox",
+      "label": "Go to the Second Church of Marika. Talk to Yura then Kill the invader",
+      "keys": ["yura"],
+      "precursors": ["item_yura_5", "event_10"],
+      "successors": ["item_yura_7", "event_14"],
       "active": false
     }
   ]
