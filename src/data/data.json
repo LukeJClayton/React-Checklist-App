@@ -266,7 +266,7 @@
         {
           "name": "filter_boggart_2",
           "label": "Boiled Prawns",
-          "keys": ["boggart", "boggart-rya", "event_10"],
+          "keys": ["boggart", "boggart-rya", "event_10", "event_1"],
           "incompatible": [],
           "active": false
         }
@@ -447,7 +447,7 @@
         {
           "name": "filter_seluvis_4",
           "label": "Puppet Vendor: Dung Eater",
-          "keys": ["ranni-intro", "seluvis", "seluvis-intro", "seluvis-puppet", "dungeater-puppet", "event_1", "event_2", "event_3"],
+          "keys": ["ranni-intro", "seluvis", "seluvis-intro", "seluvis-puppet", "dungeater-intro", "dungeater-puppet", "event_1", "event_2", "event_3", "event_10", "event_11"],
           "incompatible": ["dungeater"],
           "active": false
         },
@@ -468,7 +468,7 @@
         {
           "name": "filter_seluvis_7",
           "label": "Betrayer: Dung Eater Puppet",
-          "keys": ["ranni-intro", "seluvis", "seluvis-intro", "seluvis-puppet", "dungeater-puppet", "seluvis-betrayal", "event_1", "event_2", "event_3", "event_10"],
+          "keys": ["ranni-intro", "seluvis", "seluvis-intro", "seluvis-puppet", "dungeater-intro", "dungeater-puppet", "seluvis-betrayal", "event_1", "event_2", "event_3", "event_10", "event_11"],
           "incompatible": ["ranni", "dungeater"],
           "active": false
         }
@@ -489,6 +489,33 @@
           "name": "filter_irina_2",
           "label": "Duty over Family",
           "keys": ["irina", "event_1", "event_19"],
+          "incompatible": [],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Dung Eater",
+      "name": "section_dungeater",
+      "items": [
+        {
+          "name": "filter_dungeater_1",
+          "label": "N/A",
+          "keys": [],
+          "incompatible": [],
+          "active": true
+        },
+        {
+          "name": "filter_dungeater_2",
+          "label": "Puppet",
+          "keys": ["ranni-intro", "seluvis", "seluvis-intro", "seluvis-puppet", "dungeater-intro", "dungeater-puppet", "event_1", "event_2", "event_3", "event_10", "event_11"],
+          "incompatible": [],
+          "active": false
+        },
+        {
+          "name": "filter_dungeater_3",
+          "label": "Blessing of Despair",
+          "keys": ["dungeater-intro", "dungeater",  "boggart-rya", "boggart", "event_2",  "event_10", "event_11"],
           "incompatible": [],
           "active": false
         }
@@ -1328,7 +1355,7 @@
     {
       "name": "item_boggart_3",
       "type": "checkbox",
-      "label": "Meet Boggart by the Leyndell moat, but some crab then talk to him",
+      "label": "Meet Boggart by the Leyndell moat, buy some crab then talk to him",
       "keys": ["boggart"],
       "precursors": ["item_boggart_2", "event_10"],
       "successors": [],
@@ -2169,7 +2196,7 @@
       "type": "checkbox",
       "label": "Give the Potion to Dung Eater",
       "keys": ["seluvis-puppet", "dungeater-puppet"],
-      "precursors": ["item_ranni_1"],
+      "precursors": ["item_ranni_1", "item_dungeater_5"],
       "successors": [],
       "active": false
     },
@@ -2213,7 +2240,7 @@
       "name": "item_seluvis_8",
       "type": "checkbox",
       "label": "Talk to Pidia, Ciaran Servant",
-      "keys": ["seluvis-puppet"],
+      "keys": ["seluvis-betrayal"],
       "precursors": ["item_seluvis_7"],
       "successors": ["item_seluvis_9", "item_ranni_4"],
       "active": false
@@ -2222,7 +2249,7 @@
       "name": "item_seluvis_9",
       "type": "checkbox",
       "label": "Purchase all of Seluvis's sorceries, then talk to him again",
-      "keys": ["seluvis-puppet"],
+      "keys": ["seluvis-betrayal"],
       "precursors": ["item_seluvis_8"],
       "successors": [],
       "active": false
@@ -2267,7 +2294,16 @@
       "name": "item_seluvis_13",
       "type": "checkbox",
       "label": "Return to Pidia",
-      "keys": ["seluvis-puppet"],
+      "keys": ["seluvis-puppet", "seluvis-betrayal"],
+      "precursors": ["item_seluvis_11", "item_seluvis_12"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_14",
+      "type": "checkbox",
+      "label": "Return to Pidia",
+      "keys": ["ranni", "seluvis-puppet"],
       "precursors": ["item_seluvis_11", "item_seluvis_12"],
       "successors": [],
       "active": false
@@ -2324,6 +2360,61 @@
       "label": "Travel to the Revenger's Shack and kill Edgar the Revenger",
       "keys": ["irina"],
       "precursors": ["item_irina_5"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_dungeater_1",
+      "type": "checkbox",
+      "label": "Speak to Dung Eater in Roundtable Hold",
+      "keys": ["dungeater-intro"],
+      "precursors": ["event_10", "event_2"],
+      "successors": ["item_dungeater_2"],
+      "active": false
+    },
+    {
+      "name": "item_dungeater_2",
+      "type": "checkbox",
+      "label": "Aquire a Seedbed Curse and give it to Dung Eater",
+      "keys": ["dungeater-intro"],
+      "precursors": ["item_dungeater_1", "event_11"],
+      "successors": ["item_dungeater_3"],
+      "active": false
+    },
+    {
+      "name": "item_dungeater_3",
+      "type": "checkbox",
+      "label": "Find Dung Eater in the Subterranean Shunning-Grounds",
+      "keys": ["dungeater-intro"],
+      "precursors": ["item_dungeater_2"],
+      "successors": ["item_dungeater_4"],
+      "active": false
+    },
+    {
+      "name": "item_dungeater_4",
+      "type": "checkbox",
+      "label": "Go to Dung Eater's room in Roundtable Hold and read his Message",
+      "keys": ["dungeater-intro"],
+      "precursors": ["item_dungeater_3"],
+      "successors": ["item_dungeater_5"],
+      "active": false
+    },
+    {
+      "name": "item_dungeater_5",
+      "type": "checkbox",
+      "label": "Defeat Dung Eater in the Leyndell outer moat, then talk to him again in Roundtable Hold",
+      "keys": ["dungeater-intro"],
+      "precursors": ["item_dungeater_4", "item_boggart_3"],
+      "successors": ["item_dungeater_6"],
+      "active": false
+    },
+    {
+      "name": "item_dungeater_6",
+      "type": "checkbox",
+      "label": "Aquire 5 Seedbed Curses and give them to Dung Eater in the Subterranean Shunning-Grounds",
+      "keys": ["dungeater"],
+      "precursors": ["item_dungeater_5"],
       "successors": [],
       "active": false
     }
