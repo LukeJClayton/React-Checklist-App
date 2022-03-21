@@ -20,8 +20,16 @@ body {
 }
 
 .filters {
+
+}
+
+.filters__inner {
   display: flex;
   flex-wrap: wrap;
+}
+
+.filters__inner.is--hidden {
+  display: none;
 }
 
 .filters__section {

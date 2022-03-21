@@ -2,11 +2,13 @@ import { useContext } from 'react'
 import { FilterContext } from '../context/Filter'
 import { useUpdateFilterState } from '../js/Filter.js'
 
-const FilterBar = ({ filters }) => (
+const FilterBar = ({ filters, hiddenClass }) => (
   <div className="filters">
-    {filters.map(f => (
-      <FilterSection key={f.name} title={f.title} filters={f.items} sectionName={f.name} />
-    ))}
+    <div className={"filters__inner " + hiddenClass}>
+      {filters.map(f => (
+        <FilterSection key={f.name} title={f.title} filters={f.items} sectionName={f.name} />
+      ))}
+    </div>
   </div>
 );
 

@@ -5,7 +5,7 @@ import { useRefreshProfile, useLoadProfile, useSaveProfile } from "./js/Profile.
 import { FilterProvider, FilterContext } from "./context/Filter.js";
 import { ItemsContext, ItemsProvider } from "./context/Items.js";
 
-import { FilterBar } from './components/Filters.js';
+import { FilterBar } from './components/Filter.js';
 import { ItemList } from './components/Items.js';
 
 import './App.css';
@@ -18,6 +18,8 @@ function Main(props) {
   const saveProfile = useSaveProfile();
   const loadProfile = useLoadProfile();
   const refreshProfile = useRefreshProfile();
+  const [filtersHidden, setFiltersHidden] = useState(false);
+
 
   useEffect(() => {
     loadProfile()
@@ -26,8 +28,9 @@ function Main(props) {
   return (
     <div className="main">
       <p className="main__title">{ data.title }</p>
-      <button className="main__refresh" onClick={ refreshProfile }>Refresh Data (Clears Everything)</button>
-      <FilterBar filters={filters.filters} />
+      <button className="main__refresh" onClick={ refreshProfile }>Refresh Data (Clears Everything)</button><br/>
+      <button className="main__refresh" onClick={() => {setFiltersHidden(!filtersHidden)} }>Show/Hide Filters</button>
+      <FilterBar filters={filters.filters} hiddenClass={filtersHidden ? 'is--hidden' : ''}/>
       <ItemList data={items.items} />
     </div>
   );

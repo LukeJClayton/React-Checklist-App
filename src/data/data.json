@@ -10,6 +10,7 @@
           "label": "N/A",
           "keys": [],
           "description": "test1",
+          "incompatible": [],
           "active": true
         },
         {
@@ -17,6 +18,7 @@
           "label": "Rebirth",
           "keys": ["boc", "boc-rebirth", "event_1", "event_5", "event_11", "event_4"],
           "description": "test2",
+          "incompatible": [],
           "active": false
         },
         {
@@ -24,6 +26,7 @@
           "label": "Beauty",
           "keys": ["boc", "boc-beauty", "event_1", "event_6", "event_11", "event_4"],
           "description": "test3",
+          "incompatible": [],
           "active": false
         }
       ]
@@ -36,12 +39,14 @@
           "name": "filter_varre_1",
           "label": "N/A",
           "keys": [],
+          "incompatible": [],
           "active": true
         },
         {
           "name": "filter_varre_2",
           "label": "Lord of Blood",
           "keys": ["varre", "event_1", "event_3", "event_9"],
+          "incompatible": [],
           "active": false
         }
       ]
@@ -54,12 +59,14 @@
           "name": "filter_roderika_1",
           "label": "N/A",
           "keys": [],
+          "incompatible": [],
           "active": true
         },
         {
           "name": "filter_roderika_2",
           "label": "Spirit Tuner",
           "keys": ["roderika", "event_1", "event_2"],
+          "incompatible": [],
           "active": false
         }
       ]
@@ -72,12 +79,14 @@
           "name": "filter_thops_1",
           "label": "N/A",
           "keys": [],
+          "incompatible": [],
           "active": true
         },
         {
           "name": "filter_thops_2",
           "label": "Return to the Academy",
           "keys": ["thops", "event_1", "event_12"],
+          "incompatible": [],
           "active": false
         }
       ]
@@ -90,12 +99,14 @@
           "name": "filter_gurranq_1",
           "label": "N/A",
           "keys": [],
+          "incompatible": [],
           "active": true
         },
         {
           "name": "filter_gurranq_2",
           "label": "D's Replacement",
           "keys": ["gurranq", "event_1"],
+          "incompatible": [],
           "active": false
         }
       ]
@@ -108,12 +119,14 @@
           "name": "filter_corhyn_1",
           "label": "N/A",
           "keys": [],
+          "incompatible": [],
           "active": true
         },
         {
           "name": "filter_corhyn_2",
           "label": "Goldmask",
           "keys": ["corhyn", "goldmask", "event_2", "event_10", "event_11", "event_15", "event_17"],
+          "incompatible": [],
           "active": false
         }
       ]
@@ -126,12 +139,14 @@
           "name": "filter_yura_1",
           "label": "N/A",
           "keys": [],
+          "incompatible": [],
           "active": true
         },
         {
           "name": "filter_yura_2",
           "label": "Yura",
           "keys": ["yura", "event_12", "event_1", "event_10", "event_14"],
+          "incompatible": [],
           "active": false
         }
       ]
@@ -144,18 +159,21 @@
           "name": "filter_sellen_1",
           "label": "N/A",
           "keys": [],
+          "incompatible": [],
           "active": true
         },
         {
           "name": "filter_sellen_2",
           "label": "Sellen",
           "keys": ["sellen-jerren", "sellen", "event_1", "event_18"],
+          "incompatible": [],
           "active": false
         },
         {
           "name": "filter_sellen_3",
           "label": "Jerren",
           "keys": ["sellen-jerren", "jerren", "event_1", "event_18"],
+          "incompatible": [],
           "active": false
         }
       ]
@@ -168,18 +186,21 @@
           "name": "filter_patches_1",
           "label": "N/A",
           "keys": [],
+          "incompatible": [],
           "active": true
         },
         {
           "name": "filter_patches_2",
           "label": "No Mercy",
           "keys": ["patches", "patches-no-mercy"],
+          "incompatible": [],
           "active": false
         },
         {
           "name": "filter_patches_3",
           "label": "Forgive Him",
           "keys": ["patches", "patches-forgive", "event_1", "event_12", "event_6", "event_7", "event_8"],
+          "incompatible": [],
           "active": false
         }
       ]
@@ -192,18 +213,21 @@
           "name": "filter_rya_1",
           "label": "N/A",
           "keys": [],
+          "incompatible": [],
           "active": true
         },
         {
           "name": "filter_rya_2",
           "label": "Forget it",
           "keys": ["rya", "rya-forget", "boggart-rya", "event_1", "event_10", "event_6"],
+          "incompatible": [],
           "active": false
         },
         {
           "name": "filter_rya_3",
           "label": "Accept Yourself",
           "keys": ["rya", "rya-acceptance", "boggart-rya", "event_1", "event_10", "event_6", "event_8", "event_7"],
+          "incompatible": [],
           "active": false
         }
       ]
@@ -216,12 +240,14 @@
           "name": "filter_tanith_1",
           "label": "N/A",
           "keys": [],
+          "incompatible": [],
           "active": true
         },
         {
           "name": "filter_tanith_2",
           "label": "Lord of the Manor",
           "keys": ["tanith", "event_14", "event_6", "event_7", "event_8", "event_14"],
+          "incompatible": [],
           "active": false
         }
       ]
@@ -234,12 +260,14 @@
           "name": "filter_boggart_1",
           "label": "N/A",
           "keys": [],
+          "incompatible": [],
           "active": true
         },
         {
           "name": "filter_boggart_2",
           "label": "Boiled Prawns",
           "keys": ["boggart", "boggart-rya", "event_10"],
+          "incompatible": [],
           "active": false
         }
       ]
@@ -252,12 +280,216 @@
           "name": "filter_bernahl_1",
           "label": "N/A",
           "keys": [],
+          "incompatible": [],
           "active": true
         },
         {
           "name": "filter_bernahl_2",
           "label": "Bernahl",
           "keys": ["bernahl", "event_6", "event_11", "event_7", "event_16"],
+          "incompatible": [],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Diallos/Jar-Bairn",
+      "name": "section_diallos",
+      "items": [
+        {
+          "name": "filter_diallos_1",
+          "label": "N/A",
+          "keys": [],
+          "incompatible": [],
+          "active": true
+        },
+        {
+          "name": "filter_diallos_2",
+          "label": "Protector of Jarburg",
+          "keys": ["diallos", "event_1", "event_2", "event_6", "event_7", "event_8"],
+          "incompatible": [],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Iron Fist Alexander",
+      "name": "section_alexander",
+      "items": [
+        {
+          "name": "filter_alexander_1",
+          "label": "N/A",
+          "keys": [],
+          "incompatible": [],
+          "active": true
+        },
+        {
+          "name": "filter_alexander_2",
+          "label": "Warrior Jar's Quest",
+          "keys": ["alexander", "event_1", "event_18", "event_6", "event_14", "event_15", "event_16"],
+          "incompatible": [],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Nepheli/Kenneth",
+      "name": "section_nepheli",
+      "items": [
+        {
+          "name": "filter_nepheli_1",
+          "label": "N/A",
+          "keys": [],
+          "incompatible": [],
+          "active": true
+        },
+        {
+          "name": "filter_nepheli_2",
+          "label": "Puppet",
+          "keys": ["nepheli", "kenneth", "ranni-intro", "seluvis-intro", "seluvis-puppet", "nepheli-puppet", "event_1", "event_2", "event_3"],
+          "incompatible": [],
+          "active": false
+        },
+        {
+          "name": "filter_nepheli_3",
+          "label": "Lord of Stormveil",
+          "keys": ["nepheli", "kenneth", "gostac", "ranni-intro", "seluvis-intro", "nepheli-lord", "generic-puppet", "roderika", "event_1", "event_2", "event_3", "event_11", "event_13"],
+          "incompatible": [],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Blaidd",
+      "name": "section_blaidd",
+      "items": [
+        {
+          "name": "filter_blaidd_1",
+          "label": "N/A",
+          "keys": [],
+          "incompatible": [],
+          "active": true
+        },
+        {
+          "name": "filter_blaidd_2",
+          "label": "Blaidd",
+          "keys": ["blaidd"],
+          "incompatible": [],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Ranni",
+      "name": "section_ranni",
+      "items": [
+        {
+          "name": "filter_ranni_1",
+          "label": "N/A",
+          "keys": [],
+          "incompatible": [],
+          "active": true
+        },
+        {
+          "name": "filter_ranni_2",
+          "label": "Age of Stars",
+          "keys": ["ranni", "ranni-intro", "event_1", "event_18"],
+          "incompatible": [],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Sorcerer Rogier",
+      "name": "section_rogier",
+      "items": [
+        {
+          "name": "filter_rogier_1",
+          "label": "N/A",
+          "keys": [],
+          "incompatible": [],
+          "active": true
+        },
+        {
+          "name": "filter_rogier_2",
+          "label": "Rogier",
+          "keys": ["rogier", "rogier-fia", "event_1", "event_2", "event_3", "event_4"],
+          "incompatible": [],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Seluvis",
+      "name": "section_seluvis",
+      "items": [
+        {
+          "name": "filter_seluvis_1",
+          "label": "N/A",
+          "keys": [],
+          "incompatible": [],
+          "active": true
+        },
+        {
+          "name": "filter_seluvis_2",
+          "label": "Puppet Vendor: Generic",
+          "keys": ["ranni-intro", "seluvis", "seluvis-intro", "seluvis-puppet", "generic-puppet", "event_1", "event_2", "event_3"],
+          "incompatible": [],
+          "active": false
+        },
+        {
+          "name": "filter_seluvis_3",
+          "label": "Puppet Vendor: Nepheli",
+          "keys": ["ranni-intro", "seluvis", "seluvis-intro", "seluvis-puppet", "nepheli", "nepheli-puppet", "event_1", "event_2", "event_3"],
+          "incompatible": ["nepheli-lord"],
+          "active": false
+        },
+        {
+          "name": "filter_seluvis_4",
+          "label": "Puppet Vendor: Dung Eater",
+          "keys": ["ranni-intro", "seluvis", "seluvis-intro", "seluvis-puppet", "dungeater-puppet", "event_1", "event_2", "event_3"],
+          "incompatible": ["dungeater"],
+          "active": false
+        },
+        {
+          "name": "filter_seluvis_5",
+          "label": "Betrayer: Generic",
+          "keys": ["ranni-intro", "seluvis", "seluvis-intro", "seluvis-puppet", "generic-puppet", "seluvis-betrayal", "event_1", "event_2", "event_3", "event_10"],
+          "incompatible": ["nepheli-lord", "ranni"],
+          "active": false
+        },
+        {
+          "name": "filter_seluvis_6",
+          "label": "Betrayer: Nepheli Puppet",
+          "keys": ["ranni-intro", "seluvis", "seluvis-intro", "seluvis-puppet", "nepheli", "nepheli-puppet", "seluvis-betrayal", "event_1", "event_2", "event_3", "event_10"],
+          "incompatible": ["nepheli-lord", "ranni"],
+          "active": false
+        },
+        {
+          "name": "filter_seluvis_7",
+          "label": "Betrayer: Dung Eater Puppet",
+          "keys": ["ranni-intro", "seluvis", "seluvis-intro", "seluvis-puppet", "dungeater-puppet", "seluvis-betrayal", "event_1", "event_2", "event_3", "event_10"],
+          "incompatible": ["ranni", "dungeater"],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Irina/Edgar",
+      "name": "section_irina",
+      "items": [
+        {
+          "name": "filter_irina_1",
+          "label": "N/A",
+          "keys": [],
+          "incompatible": [],
+          "active": true
+        },
+        {
+          "name": "filter_irina_2",
+          "label": "Duty over Family",
+          "keys": ["irina", "event_1", "event_19"],
+          "incompatible": [],
           "active": false
         }
       ]
@@ -313,7 +545,7 @@
       "name": "event_6",
       "type": "event",
       "label": "Visit Volcano Manor",
-      "keys": ["event_6", "event_10"],
+      "keys": ["event_6"],
       "precursors": ["event_1"],
       "successors": [],
       "active": false
@@ -323,7 +555,7 @@
       "type": "event",
       "label": "Complete the Volcano Manor Questline",
       "keys": ["event_7"],
-      "precursors": ["event_6"],
+      "precursors": ["event_6", "event_1"],
       "successors": ["event_8"],
       "active": false
     },
@@ -332,7 +564,7 @@
       "type": "event",
       "label": "Kill Rykard",
       "keys": ["event_8"],
-      "precursors": ["event_6"],
+      "precursors": ["event_6", "event_1"],
       "successors": [],
       "active": false
     },
@@ -359,7 +591,7 @@
       "type": "event",
       "label": "Reach the Royal Capital",
       "keys": ["event_11"],
-      "precursors": ["event_4", "event_10"],
+      "precursors": ["event_4", "event_10", "event_1"],
       "successors": [],
       "active": false
     },
@@ -386,7 +618,7 @@
       "type": "event",
       "label": "Reach the Mountaintops of the Giants",
       "keys": ["event_14"],
-      "precursors": ["event_13", "event_11", "event_10", "event_4"],
+      "precursors": ["event_13", "event_11", "event_10", "event_4", "event_1", "event_6"],
       "successors": [],
       "active": false
     },
@@ -395,7 +627,7 @@
       "type": "event",
       "label": "Kill the Fire Giant",
       "keys": ["event_15"],
-      "precursors": ["event_10" ,"event_11", "event_13", "event_14"],
+      "precursors": ["event_8", "event_10" ,"event_11", "event_13", "event_14", "event_1"],
       "successors": [],
       "active": false
     },
@@ -404,7 +636,7 @@
       "type": "event",
       "label": "Reach Crumbling Farum Azula",
       "keys": ["event_16"],
-      "precursors": ["event_10" ,"event_11", "event_13", "event_14", "event_15"],
+      "precursors": ["event_10" ,"event_11", "event_13", "event_14", "event_15", "event_1"],
       "successors": [],
       "active": false
     },
@@ -422,6 +654,15 @@
       "type": "event",
       "label": "Kill Radahn",
       "keys": ["event_18"],
+      "precursors": ["event_1"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "event_19",
+      "type": "event",
+      "label": "Kill the Leonine Misbegotten",
+      "keys": ["event_19"],
       "precursors": ["event_1"],
       "successors": [],
       "active": false
@@ -850,7 +1091,7 @@
     {
       "name": "item_yura_2",
       "type": "checkbox",
-      "label": "Kill Flying Dragon Agheel nad return to Yura",
+      "label": "Kill Flying Dragon Agheel and return to Yura",
       "keys": ["yura"],
       "precursors": ["item_yura_1"],
       "successors": ["item_yura_3"],
@@ -959,7 +1200,7 @@
     {
       "name": "item_sellen_8",
       "type": "checkbox",
-      "label": "Go through the Illusory wall to find Sellen and interact with her",
+      "label": "Go through the Illusory wall in the Three Sisters to find Sellen and interact with her",
       "keys": ["sellen-jerren"],
       "precursors": ["item_sellen_7"],
       "successors": ["item_sellen_9"],
@@ -1382,6 +1623,708 @@
       "keys": ["bernahl"],
       "precursors": ["item_bernahl_5", "event_7", "event_16"],
       "successors": ["item_bernahl_7"],
+      "active": false
+    },
+
+    {
+      "name": "item_alexander_1",
+      "type": "checkbox",
+      "label": "Free Alexander from near the Saint's Bridge in Limgrave",
+      "keys": ["alexander"],
+      "precursors": [],
+      "successors": ["item_alexander_2"],
+      "active": false
+    },
+    {
+      "name": "item_alexander_2",
+      "type": "checkbox",
+      "label": "Talk to Alexander in Gael Tunnel",
+      "keys": ["alexander"],
+      "precursors": ["item_alexander_1", "event_1"],
+      "successors": ["item_alexander_3"],
+      "active": false
+    },
+    {
+      "name": "item_alexander_3",
+      "type": "checkbox",
+      "label": "Talk to Alexander in Redmane Castle",
+      "keys": ["alexander"],
+      "precursors": ["item_alexander_2"],
+      "successors": ["item_alexander_4", "event_18"],
+      "active": false
+    },
+    {
+      "name": "item_alexander_4",
+      "type": "checkbox",
+      "label": "Talk to Alexander in Radahn's Boss Room",
+      "keys": ["alexander"],
+      "precursors": ["item_alexander_3", "event_18"],
+      "successors": ["item_alexander_5"],
+      "active": false
+    },
+    {
+      "name": "item_alexander_5",
+      "type": "checkbox",
+      "label": "Free Alexander from near Ciaran Study Hall using an Oil Pot",
+      "keys": ["alexander"],
+      "precursors": ["item_alexander_4", "event_1"],
+      "successors": ["item_alexander_6"],
+      "active": false
+    },
+    {
+      "name": "item_alexander_6",
+      "type": "checkbox",
+      "label": "Find Alexander by Seethewater Teminus in Mt Gelmir",
+      "keys": ["alexander"],
+      "precursors": ["item_alexander_5", "event_6"],
+      "successors": ["item_alexander_7"],
+      "active": false
+    },
+    {
+      "name": "item_alexander_7",
+      "type": "checkbox",
+      "label": "Summon Alexander for the Fire Giant fight (optional)",
+      "keys": ["alexander"],
+      "precursors": ["item_alexander_6", "event_14"],
+      "successors": ["item_alexander_8", "event_15"],
+      "active": false
+    },
+    {
+      "name": "item_alexander_8",
+      "type": "checkbox",
+      "label": "Duel Alexander in Crumbling Farum Azula and take his remains",
+      "keys": ["alexander"],
+      "precursors": ["item_alexander_7", "event_15", "event_16"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_diallos_1",
+      "type": "checkbox",
+      "label": "Talk to Diallos in Roundtable Hold",
+      "keys": ["diallos"],
+      "precursors": ["event_2", "item_alexander_1"],
+      "successors": ["item_diallos_2"],
+      "active": false
+    },
+    {
+      "name": "item_diallos_2",
+      "type": "checkbox",
+      "label": "Talk to Diallos near Academy Gate Town, then return to Roundtable Hold and talk to him again",
+      "keys": ["diallos"],
+      "precursors": ["event_1", "item_diallos_1"],
+      "successors": ["item_diallos_3"],
+      "active": false
+    },
+    {
+      "name": "item_diallos_3",
+      "type": "checkbox",
+      "label": "Talk to Diallos in Volcano Manor",
+      "keys": ["diallos"],
+      "precursors": ["item_diallos_2", "event_6"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_diallos_4",
+      "type": "checkbox",
+      "label": "Talk to Diallos again after completing Volcano Manor",
+      "keys": ["diallos"],
+      "precursors": ["item_diallos_3", "event_6", "event_7"],
+      "successors": ["item_diallos_5"],
+      "active": false
+    },
+    {
+      "name": "item_diallos_5",
+      "type": "checkbox",
+      "label": "Talk to Diallos again after disbanding Volcano Manor",
+      "keys": ["diallos"],
+      "precursors": ["item_diallos_4", "event_8"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_diallos_6",
+      "type": "checkbox",
+      "label": "Go to Jarburg and talk to Diallos and Jar-Bairn, reload until Diallos Dies a Hero",
+      "keys": ["diallos"],
+      "precursors": ["item_diallos_5"],
+      "successors": ["item_diallos_7"],
+      "active": false
+    },
+    {
+      "name": "item_diallos_7",
+      "type": "checkbox",
+      "label": "Give Alexander's Innard to Jar-Bairn to get the Companion Jar Talisman.",
+      "keys": ["diallos", "alexander"],
+      "precursors": ["item_diallos_6", "item_alexander_8"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_kenneth_1",
+      "type": "checkbox",
+      "label": "Talk to Kenneth Haight north of the Mistwood",
+      "keys": ["kenneth"],
+      "precursors": [],
+      "successors": ["item_kenneth_2"],
+      "active": false
+    },
+    {
+      "name": "item_kenneth_2",
+      "type": "checkbox",
+      "label": "Defeat the enemy at the top of Fort Haight then go back to Kenneth for a reward",
+      "keys": ["kenneth"],
+      "precursors": ["item_kenneth_1"],
+      "successors": ["item_kenneth_3"],
+      "active": false
+    },
+    {
+      "name": "item_kenneth_3",
+      "type": "checkbox",
+      "label": "Talk to Kenneth at the top of Fort Haight",
+      "keys": ["kenneth"],
+      "precursors": ["item_kenneth_2"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_nepheli_1",
+      "type": "checkbox",
+      "label": "After reaching Stormveil's main gate, talk to Gostac and take his advice",
+      "keys": ["nepheli", "gostac"],
+      "precursors": ["item_kenneth_3"],
+      "successors": ["item_nepheli_2"],
+      "active": false
+    },
+    {
+      "name": "item_nepheli_2",
+      "type": "checkbox",
+      "label": "Find and talk to Nepheli before Godrick, optionally summon her for the boss fight",
+      "keys": ["nepheli"],
+      "precursors": ["item_nepheli_1"],
+      "successors": ["item_nepheli_3"],
+      "active": false
+    },
+    {
+      "name": "item_nepheli_3",
+      "type": "checkbox",
+      "label": "After Godrick reload the area and talk to Gostac",
+      "keys": ["nepheli", "gostac"],
+      "precursors": ["item_nepheli_2"],
+      "successors": ["item_nepheli_4"],
+      "active": false
+    },
+    {
+      "name": "item_nepheli_4",
+      "type": "checkbox",
+      "label": "Talk to Nepheli in Roundtable Hold, then talk to Gideon abour her",
+      "keys": ["nepheli"],
+      "precursors": ["item_nepheli_3", "event_2"],
+      "successors": ["item_nepheli_5"],
+      "active": false
+    },
+    {
+      "name": "item_nepheli_5",
+      "type": "checkbox",
+      "label": "Talk to Nepheli in the Village of the Albinaurics, then kill the nearby Omen Killer",
+      "keys": ["nepheli"],
+      "precursors": ["item_nepheli_4"],
+      "successors": ["item_nepheli_6"],
+      "active": false
+    },
+    {
+      "name": "item_nepheli_6",
+      "type": "checkbox",
+      "label": "Return to Roundtable Hold and talk to her and Gideon to exhaust their dialogue",
+      "keys": ["nepheli"],
+      "precursors": ["item_nepheli_5"],
+      "successors": ["item_nepheli_7"],
+      "active": false
+    },
+    {
+      "name": "item_nepheli_7",
+      "type": "checkbox",
+      "label": "Take it to Gideon instead and report back to Seluvis",
+      "keys": ["generic-puppet"],
+      "precursors": ["item_nepheli_6", "item_seluvis_1", "event_2"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_nepheli_8",
+      "type": "checkbox",
+      "label": "Get to the Chapel of Anticipation in the Great Belfries to find the Stormhawk King's Ashes",
+      "keys": ["nepheli-lord"],
+      "precursors": ["item_nepheli_7"],
+      "successors": ["item_nepheli_9"],
+      "active": false
+    },
+    {
+      "name": "item_nepheli_9",
+      "type": "checkbox",
+      "label": "Return to Roundtable Hold, give the Stormhawk King's Ashes to Nepheli",
+      "keys": ["nepheli-lord"],
+      "precursors": ["item_nepheli_8", "event_11", "event_13"],
+      "successors": ["item_nepheli_10"],
+      "active": false
+    },
+    {
+      "name": "item_nepheli_10",
+      "type": "checkbox",
+      "label": "Go back to the Stormveil Castle Boss room and rest to find Kenneth, Nepheli and Gostac. Talk to them and you will receive an Ancient Dragon Smithing Stone and can buy another from Gostac",
+      "keys": ["nepheli-lord"],
+      "precursors": ["item_nepheli_9"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_blaidd_1",
+      "type": "checkbox",
+      "label": "Go to Mistwood Ruins to hear a wolf howl",
+      "keys": ["blaidd"],
+      "precursors": [],
+      "successors": ["item_blaidd_2"],
+      "active": false
+    },
+    {
+      "name": "item_blaidd_2",
+      "type": "checkbox",
+      "label": "Talk to Kale and tell him about the Howling to get the Finger Snap gesture",
+      "keys": ["blaidd"],
+      "precursors": ["item_blaidd_1"],
+      "successors": ["item_blaidd_3"],
+      "active": false
+    },
+    {
+      "name": "item_blaidd_3",
+      "type": "checkbox",
+      "label": "Return to the Mistwood Ruins and use the Finger Snap gesture to talk to Blaidd",
+      "keys": ["blaidd"],
+      "precursors": ["item_blaidd_2"],
+      "successors": ["item_blaidd_4"],
+      "active": false
+    },
+    {
+      "name": "item_blaidd_4",
+      "type": "checkbox",
+      "label": "Fight Darriwil at the Forlorn Hound Evergaol (optionally summon Blaidd for this fight), then talk to Blaidd afterwards",
+      "keys": ["blaidd"],
+      "precursors": ["item_blaidd_3"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_rogier_1",
+      "type": "checkbox",
+      "label": "Talk to Rogier in Stormveil Castle",
+      "keys": ["rogier"],
+      "precursors": [],
+      "successors": ["item_rogier_2"],
+      "active": false
+    },
+    {
+      "name": "item_rogier_2",
+      "type": "checkbox",
+      "label": "Talk to Rogier in Roundtable Hold",
+      "keys": ["rogier"],
+      "precursors": ["item_rogier_1", "event_2", "event_3"],
+      "successors": ["item_ranni_2", "item_rogier_3"],
+      "active": false
+    },
+    {
+      "name": "item_rogier_3",
+      "type": "checkbox",
+      "label": "Defeat the Lesser Ulcerated Tree Spirit under Stormveil Castle, continue on to find what looks to be an ancient, rotting face. Just in front of the face is a bloodstain. Activate it to view a memory",
+      "keys": ["rogier"],
+      "precursors": ["item_rogier_2"],
+      "successors": ["item_rogier_4"],
+      "active": false
+    },
+    {
+      "name": "item_rogier_4",
+      "type": "checkbox",
+      "label": "Return to the Roundtable and ask Rogier about the face",
+      "keys": ["rogier"],
+      "precursors": ["item_rogier_3"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_rogier_5",
+      "type": "checkbox",
+      "label": "Talk to Fia and allow her to hold the Tarnished, Talk to her again in secret and ask 'Did you know?'",
+      "keys": ["rogier-fia"],
+      "precursors": ["item_rogier_4"],
+      "successors": ["item_rogier_6"],
+      "active": false
+    },
+    {
+      "name": "item_rogier_6",
+      "type": "checkbox",
+      "label": "Talk to Fia and allow her to hold the Tarnished, Talk to her in secret and ask 'About the Black Knifeprint'",
+      "keys": ["rogier-fia"],
+      "precursors": ["item_rogier_5", "event_4"],
+      "successors": ["item_rogier_7"],
+      "active": false
+    },
+    {
+      "name": "item_rogier_7",
+      "type": "checkbox",
+      "label": "Go to the Black Knife Catacombs and retrieve the Black Knifeprint",
+      "keys": ["rogier"],
+      "precursors": ["item_rogier_6", "event_1"],
+      "successors": ["item_rogier_8"],
+      "active": false
+    },
+    {
+      "name": "item_rogier_8",
+      "type": "checkbox",
+      "label": "Return the Black Knifeprint to Rogier, reload the area and talk to him again",
+      "keys": ["rogier"],
+      "precursors": ["item_rogier_7"],
+      "successors": ["item_rogier_9"],
+      "active": false
+    },
+    {
+      "name": "item_rogier_8",
+      "type": "checkbox",
+      "label": "Return the Black Knifeprint to Rogier, reload the area and talk to him again",
+      "keys": ["rogier"],
+      "precursors": ["item_rogier_7"],
+      "successors": ["item_rogier_9", "item_ranni_2"],
+      "active": false
+    },
+    {
+      "name": "item_rogier_9",
+      "type": "checkbox",
+      "label": "Return to Rogier, then return to Ranni again",
+      "keys": ["rogier", "ranni"],
+      "precursors": ["item_rogier_8", "item_ranni_2"],
+      "successors": ["item_rogier_10", "item_ranni_3"],
+      "active": false
+    },
+    {
+      "name": "item_rogier_10",
+      "type": "checkbox",
+      "label": "Return to Rogier and reload the area until he falls asleep",
+      "keys": ["rogier", "ranni-intro"],
+      "precursors": ["item_rogier_9"],
+      "successors": ["item_rogier_11"],
+      "active": false
+    },
+    {
+      "name": "item_rogier_11",
+      "type": "checkbox",
+      "label": "Teleport into Roundtable Hold from another site of Grace, collect Rogiers items",
+      "keys": ["rogier", "ranni-intro"],
+      "precursors": ["item_rogier_10"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_ranni_1",
+      "type": "checkbox",
+      "label": "Talk to Ranni/Renna at the Church of Elleh",
+      "keys": ["ranni-intro"],
+      "precursors": ["event_2"],
+      "successors": ["event_1", "item_ranni_2"],
+      "active": false
+    },
+    {
+      "name": "item_ranni_2",
+      "type": "checkbox",
+      "label": "Defeat Caria Manor then go West from the Manor to find Ranni's Rise. Talk to Ranni",
+      "keys": ["ranni-intro"],
+      "precursors": ["item_nepheli_8", "event_1"],
+      "successors": ["item_ranni_3"],
+      "active": false
+    },
+    {
+      "name": "item_ranni_3",
+      "type": "checkbox",
+      "label": "Talk to Blaidd in Siofra River",
+      "keys": ["ranni"],
+      "precursors": ["item_ranni_2"],
+      "successors": ["item_ranni_4"],
+      "active": false
+    },
+    {
+      "name": "item_ranni_4",
+      "type": "checkbox",
+      "label": "Enter Nokron and recover the Fingerslayer Blade",
+      "keys": ["ranni"],
+      "precursors": ["item_ranni_3", "event_18"],
+      "successors": ["item_ranni_5"],
+      "active": false
+    },
+    {
+      "name": "item_ranni_5",
+      "type": "checkbox",
+      "label": "Return the Fingerslayer Blade to Ranni to recieve the Carian Inverted Statue",
+      "keys": ["ranni"],
+      "precursors": ["item_ranni_4"],
+      "successors": ["item_ranni_6"],
+      "active": false
+    },
+    {
+      "name": "item_ranni_6",
+      "type": "checkbox",
+      "label": "Reach the top of the Divine Tower of Liurnia and collect the Cursemark of Death",
+      "keys": ["ranni"],
+      "precursors": ["item_ranni_5"],
+      "successors": ["item_ranni_7"],
+      "active": false
+    },
+    {
+      "name": "item_ranni_7",
+      "type": "checkbox",
+      "label": "Go to Renna's Rise and teleport to Ainsel River Main, where you can loot a Miniature Ranni doll",
+      "keys": ["ranni"],
+      "precursors": ["item_ranni_6"],
+      "successors": ["item_ranni_8"],
+      "active": false
+    },
+    {
+      "name": "item_ranni_8",
+      "type": "checkbox",
+      "label": "After entering the menu at the Ainsel River Main Site of Grace 'Talk to Ranni' three times",
+      "keys": ["ranni"],
+      "precursors": ["item_ranni_7"],
+      "successors": ["item_ranni_9"],
+      "active": false
+    },
+    {
+      "name": "item_ranni_9",
+      "type": "checkbox",
+      "label": "Kill the Baleful Shadow and talk to Ranni to recieve the Discarded Palace Key",
+      "keys": ["ranni"],
+      "precursors": ["item_ranni_8"],
+      "successors": ["item_ranni_10"],
+      "active": false
+    },
+    {
+      "name": "item_ranni_10",
+      "type": "checkbox",
+      "label": "Go to Rennala's boss room to open the locked chest to get the Dark Moon Ring",
+      "keys": ["ranni"],
+      "precursors": ["item_ranni_9"],
+      "successors": ["item_ranni_11"],
+      "active": false
+    },
+    {
+      "name": "item_ranni_11",
+      "type": "checkbox",
+      "label": "Continue to the Grand Cloister and use the coffin to reach Astel, Naturalborn of the Void",
+      "keys": ["ranni"],
+      "precursors": ["item_ranni_10"],
+      "successors": ["item_ranni_12"],
+      "active": false
+    },
+    {
+      "name": "item_ranni_12",
+      "type": "checkbox",
+      "label": "Continue to the Moonlight Altar, and enter the Cathedral of Manus Celes",
+      "keys": ["ranni"],
+      "precursors": ["item_ranni_11"],
+      "successors": ["item_ranni_13"],
+      "active": false
+    },
+    {
+      "name": "item_ranni_13",
+      "type": "checkbox",
+      "label": "Using the Dark Moon Ring on Ranni's body will reward the player with the Dark Moon Greatsword",
+      "keys": ["ranni"],
+      "precursors": ["item_ranni_12"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_seluvis_1",
+      "type": "checkbox",
+      "label": "Go South of Ranni's Rise to the tower nearby to find Seluvis. He will give you a potion for Nepheli",
+      "keys": ["seluvis-intro"],
+      "precursors": ["item_ranni_1", "item_ranni_2"],
+      "successors": ["item_seluvis_2", "item_seluvis_3", "item_nepheli_7"],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_2",
+      "type": "checkbox",
+      "label": "Give the Potion to Nephelli",
+      "keys": ["seluvis-puppet", "nepheli-puppet"],
+      "precursors": ["item_ranni_1"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_3",
+      "type": "checkbox",
+      "label": "Give the Potion to Dung Eater",
+      "keys": ["seluvis-puppet", "dungeater-puppet"],
+      "precursors": ["item_ranni_1"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_4",
+      "type": "checkbox",
+      "label": "Return to Seluvis",
+      "keys": ["seluvis-puppet"],
+      "precursors": ["item_seluvis_2", "item_seluvis_3", "item_nepheli_7"],
+      "successors": ["item_seluvis_5"],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_5",
+      "type": "checkbox",
+      "label": "Find Seluvis secret room in the Three Sisters and interact with his message",
+      "keys": ["seluvis-puppet"],
+      "precursors": ["item_seluvis_4", "item_sellen_8"],
+      "successors": ["item_seluvis_6"],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_6",
+      "type": "checkbox",
+      "label": "Aquire a starlight shard",
+      "keys": ["seluvis-puppet"],
+      "precursors": ["item_seluvis_5"],
+      "successors": ["item_seluvis_7"],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_7",
+      "type": "checkbox",
+      "label": "Return to Seluvis and purchase one of his puppets",
+      "keys": ["seluvis-puppet"],
+      "precursors": ["item_seluvis_6"],
+      "successors": ["item_seluvis_8"],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_8",
+      "type": "checkbox",
+      "label": "Talk to Pidia, Ciaran Servant",
+      "keys": ["seluvis-puppet"],
+      "precursors": ["item_seluvis_7"],
+      "successors": ["item_seluvis_9", "item_ranni_4"],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_9",
+      "type": "checkbox",
+      "label": "Purchase all of Seluvis's sorceries, then talk to him again",
+      "keys": ["seluvis-puppet"],
+      "precursors": ["item_seluvis_8"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_9",
+      "type": "checkbox",
+      "label": "Aquire an Amber Starlight shard from the Altus Plataeu, and give it to Seluvis",
+      "keys": ["seluvis-betrayal"],
+      "precursors": ["item_seluvis_8", "event_10"],
+      "successors": ["item_seluvis_10"],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_10",
+      "type": "checkbox",
+      "label": "Reload the area and recieve the Amber Draught and give it to Ranni",
+      "keys": ["seluvis-betrayal"],
+      "precursors": ["item_seluvis_9"],
+      "successors": ["item_seluvis_11"],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_11",
+      "type": "checkbox",
+      "label": "Return to Seluvis to find him dead",
+      "keys": ["seluvis-betrayal"],
+      "precursors": ["item_seluvis_10"],
+      "successors": ["item_ranni_4"],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_12",
+      "type": "checkbox",
+      "label": "Return to Seluvis to find him dead",
+      "keys": ["ranni"],
+      "precursors": ["item_ranni_4"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_seluvis_13",
+      "type": "checkbox",
+      "label": "Return to Pidia",
+      "keys": ["seluvis-puppet"],
+      "precursors": ["item_seluvis_11", "item_seluvis_12"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_irina_1",
+      "type": "checkbox",
+      "label": "Talk to Irina in the Weeping Peninsula",
+      "keys": ["irina"],
+      "precursors": ["event_1"],
+      "successors": ["item_irina_2"],
+      "active": false
+    },
+    {
+      "name": "item_irina_2",
+      "type": "checkbox",
+      "label": "Give Irina's letter to Edgar in Castle Morne",
+      "keys": ["irina"],
+      "precursors": ["item_irina_1"],
+      "successors": ["item_irina_3"],
+      "active": false
+    },
+    {
+      "name": "item_irina_3",
+      "type": "checkbox",
+      "label": "Return to Irina to find her dead",
+      "keys": ["irina"],
+      "precursors": ["item_irina_2"],
+      "successors": ["item_irina_4"],
+      "active": false
+    },
+    {
+      "name": "item_irina_4",
+      "type": "checkbox",
+      "label": "Talk to Edgar again",
+      "keys": ["irina"],
+      "precursors": ["item_irina_3", "event_19"],
+      "successors": ["item_irina_5"],
+      "active": false
+    },
+    {
+      "name": "item_irina_5",
+      "type": "checkbox",
+      "label": "Find Edgar next to Irina and talk to him",
+      "keys": ["irina"],
+      "precursors": ["item_irina_4"],
+      "successors": ["item_irina_6"],
+      "active": false
+    },
+    {
+      "name": "item_irina_6",
+      "type": "checkbox",
+      "label": "Travel to the Revenger's Shack and kill Edgar the Revenger",
+      "keys": ["irina"],
+      "precursors": ["item_irina_5"],
+      "successors": [],
       "active": false
     }
   ]

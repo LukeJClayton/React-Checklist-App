@@ -30,16 +30,22 @@ export function useUpdateFilterState (e) {
 }
 
 export function filterItems (filterState, setItems, saveProfile) {
-  var keys = [];
+  var keys = []
+    , incompatible = []
 
   for (var i = 0; i < filterState.length; i++) {
     let items = filterState[i].items;
     for (var j = 0; j < items.length; j++) {
       if (items[j].active == true) {
         keys = keys.concat(items[j].keys)
+        incompatible = incompatible.concat(items[j].incompatible)
       }
     }
   }
+
+  keys = keys.filter(function(key) {
+    return !incompatible.includes(key);
+  });
 
   let filteredData = data.items.filter(function(item) {
     for (let i = 0; i <= keys.length; i++) {
