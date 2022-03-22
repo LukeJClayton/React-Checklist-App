@@ -165,14 +165,14 @@
         {
           "name": "filter_sellen_2",
           "label": "Sellen",
-          "keys": ["sellen-jerren", "sellen", "event_1", "event_18"],
+          "keys": ["sellen-jerren", "sellen", "event_1", "event_18", "event_5"],
           "incompatible": [],
           "active": false
         },
         {
           "name": "filter_sellen_3",
           "label": "Jerren",
-          "keys": ["sellen-jerren", "jerren", "event_1", "event_18"],
+          "keys": ["sellen-jerren", "jerren", "event_1", "event_18", "event_5"],
           "incompatible": [],
           "active": false
         }
@@ -373,7 +373,7 @@
         {
           "name": "filter_blaidd_2",
           "label": "Blaidd",
-          "keys": ["blaidd"],
+          "keys": ["blaidd", "event_1", "event_18"],
           "incompatible": [],
           "active": false
         }
@@ -393,7 +393,7 @@
         {
           "name": "filter_ranni_2",
           "label": "Age of Stars",
-          "keys": ["ranni", "ranni-intro", "event_1", "event_18"],
+          "keys": ["ranni", "ranni-intro", "event_1", "event_18", "event_5"],
           "incompatible": [],
           "active": false
         }
@@ -516,6 +516,100 @@
           "name": "filter_dungeater_3",
           "label": "Blessing of Despair",
           "keys": ["dungeater-intro", "dungeater",  "boggart-rya", "boggart", "event_2",  "event_10", "event_11"],
+          "incompatible": [],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Latenna",
+      "name": "section_latenna",
+      "items": [
+        {
+          "name": "filter_latenna_1",
+          "label": "N/A",
+          "keys": [],
+          "incompatible": [],
+          "active": true
+        },
+        {
+          "name": "filter_latenna_2",
+          "label": "Latenna",
+          "keys": ["latenna", "albus", "event_1", "event_2", "event_14"],
+          "incompatible": [],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Millicent/Gowry",
+      "name": "section_millicent",
+      "items": [
+        {
+          "name": "filter_millicent_1",
+          "label": "N/A",
+          "keys": [],
+          "incompatible": [],
+          "active": true
+        },
+        {
+          "name": "filter_millicent_2",
+          "label": "Help Millicent",
+          "keys": ["albus", "millicent", "gowry", "millicent-help", "event_1" ,"event_10", "event_14"],
+          "incompatible": [],
+          "active": false
+        },
+        {
+          "name": "filter_millicent_3",
+          "label": "Fight Millicent",
+          "keys": ["albus", "millicent", "gowry", "millicent-fight", "event_1" ,"event_10", "event_14"],
+          "incompatible": [],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Fia/D",
+      "name": "section_fia",
+      "items": [
+        {
+          "name": "filter_fia_1",
+          "label": "N/A",
+          "keys": [],
+          "incompatible": [],
+          "active": true
+        },
+        {
+          "name": "filter_fia_2",
+          "label": "Fia",
+          "keys": ["ranni-ria", "ranni-intro", "rogier-fia", "d", "fia", "event_1", "event_2", "event_18", "event_10"],
+          "incompatible": [],
+          "active": false
+        },
+        {
+          "name": "filter_fia_3",
+          "label": "Brother's Revenge",
+          "keys": ["ranni-ria", "ranni-intro", "rogier-fia", "d", "d-brother", "event_1", "event_2", "event_18", "event_10"],
+          "incompatible": [],
+          "active": false
+        }
+      ]
+    },
+    {
+      "title": "Hyetta",
+      "name": "section_hyetta",
+      "items": [
+        {
+          "name": "filter_hyetta_1",
+          "label": "N/A",
+          "keys": [],
+          "incompatible": [],
+          "active": true
+        },
+        {
+          "name": "filter_hyetta_2",
+          "label": "Lord of Frenzied Flame",
+          "keys": ["irina", "hyetta", "frenzy", "gowry", "event_1", "event_11", "event_14", "event_19", "event_20"],
           "incompatible": [],
           "active": false
         }
@@ -694,6 +788,16 @@
       "successors": [],
       "active": false
     },
+    {
+      "name": "event_20",
+      "type": "event",
+      "label": "Kill Malenia",
+      "keys": ["event_20"],
+      "precursors": ["event_14"],
+      "successors": [],
+      "active": false
+    },
+
 
     {
       "name": "item_roderika_1",
@@ -1099,7 +1203,7 @@
     {
       "name": "item_corhyn_12",
       "type": "checkbox",
-      "label": "Find the corpse of Goldmask on the West side of Erdtree Sanctuary Grace, past a few plants for the Mending Rune of Perfect Order. Reload and check Goldmask again for his armor. Corhyn can be found on the bridge near Stargazer Ruins, kill him for his armor and weapon",
+      "label": "Find the corpse of Goldmask on the West side of Erdtree Sanctuary Grace, past a few plants for the Mending Rune of Perfect Order. Reload and check Goldmask again for his armour. Corhyn can be found on the bridge near Stargazer Ruins, kill him for his armour and weapon",
       "keys": ["corhyn"],
       "precursors": ["item_corhyn_11", "event_15", "event_17"],
       "successors": [],
@@ -1285,7 +1389,7 @@
       "label": "Talk to Tanith in Volcano Manor",
       "keys": ["tanith"],
       "precursors": ["event_6", "item_rya_3", "item_patches_8"],
-      "successors": ["item_tanith_2"],
+      "successors": ["item_tanith_2", "item_rya_4", "item_patches_9", "item_bernahl_2", "item_diallos_3"],
       "active": false
     },
     {
@@ -1300,7 +1404,7 @@
     {
       "name": "item_tanith_3",
       "type": "checkbox",
-      "label": "Complete your first Volcano Manor contract, Old Knight Istvan",
+      "label": "Complete your second Volcano Manor contract, Rileigh the Idle",
       "keys": ["tanith"],
       "precursors": ["item_tanith_2"],
       "successors": ["item_tanith_4"],
@@ -1309,27 +1413,18 @@
     {
       "name": "item_tanith_4",
       "type": "checkbox",
-      "label": "Complete your second Volcano Manor contract, Rileigh the Idle",
+      "label": "Complete your third Volcano Manor contract, Juno Hoslow",
       "keys": ["tanith"],
-      "precursors": ["item_tanith_3"],
-      "successors": ["item_tanith_5"],
+      "precursors": ["item_tanith_3", "event_14"],
+      "successors": ["item_tanith_5", "event_7", "event_8"],
       "active": false
     },
     {
       "name": "item_tanith_5",
       "type": "checkbox",
-      "label": "Complete your third Volcano Manor contract, Juno Hoslow",
-      "keys": ["tanith"],
-      "precursors": ["item_tanith_4", "event_14"],
-      "successors": ["item_tanith_6", "event_7", "event_8"],
-      "active": false
-    },
-    {
-      "name": "item_tanith_6",
-      "type": "checkbox",
       "label": "Talk to Lady Tanith in Rykard's Boss Room",
       "keys": ["tanith"],
-      "precursors": ["event_7", "event_8", "item_tanith_5"],
+      "precursors": ["event_7", "event_8", "item_tanith_4"],
       "successors": ["item_patches_12"],
       "active": false
     },
@@ -1945,6 +2040,33 @@
       "successors": [],
       "active": false
     },
+    {
+      "name": "item_blaidd_5",
+      "type": "checkbox",
+      "label": "Release Blaidd from the Forlorn Hound Evergaol",
+      "keys": ["blaidd"],
+      "precursors": ["event_18"],
+      "successors": ["item_blaidd_6"],
+      "active": false
+    },
+    {
+      "name": "item_blaidd_6",
+      "type": "checkbox",
+      "label": "Talk to Iji about Blaidd",
+      "keys": ["blaidd"],
+      "precursors": ["item_blaidd_5", "event_1"],
+      "successors": ["item_blaidd_7"],
+      "active": false
+    },
+    {
+      "name": "item_blaidd_7",
+      "type": "checkbox",
+      "label": "Find Blaidd outside Ranni's Rise, Defeat him and return to Iji",
+      "keys": ["blaidd", "ranni"],
+      "precursors": ["item_blaidd_6", "item_ranni_13"],
+      "successors": [],
+      "active": false
+    },
 
     {
       "name": "item_rogier_1",
@@ -1985,9 +2107,9 @@
     {
       "name": "item_rogier_5",
       "type": "checkbox",
-      "label": "Talk to Fia and allow her to hold the Tarnished, Talk to her again in secret and ask 'Did you know?'",
+      "label": "Talk to Fia and allow her to hold the Tarnished, Talk to her again in secret and exhaust her dialog",
       "keys": ["rogier-fia"],
-      "precursors": ["item_rogier_4"],
+      "precursors": ["item_rogier_4", "event_2"],
       "successors": ["item_rogier_6"],
       "active": false
     },
@@ -1995,7 +2117,7 @@
       "name": "item_rogier_6",
       "type": "checkbox",
       "label": "Talk to Fia and allow her to hold the Tarnished, Talk to her in secret and ask 'About the Black Knifeprint'",
-      "keys": ["rogier-fia"],
+      "keys": ["rogier"],
       "precursors": ["item_rogier_5", "event_4"],
       "successors": ["item_rogier_7"],
       "active": false
@@ -2077,7 +2199,7 @@
       "name": "item_ranni_3",
       "type": "checkbox",
       "label": "Talk to Blaidd in Siofra River",
-      "keys": ["ranni"],
+      "keys": ["ranni-ria"],
       "precursors": ["item_ranni_2"],
       "successors": ["item_ranni_4"],
       "active": false
@@ -2086,7 +2208,7 @@
       "name": "item_ranni_4",
       "type": "checkbox",
       "label": "Enter Nokron and recover the Fingerslayer Blade",
-      "keys": ["ranni"],
+      "keys": ["ranni-ria"],
       "precursors": ["item_ranni_3", "event_18"],
       "successors": ["item_ranni_5"],
       "active": false
@@ -2095,7 +2217,7 @@
       "name": "item_ranni_5",
       "type": "checkbox",
       "label": "Return the Fingerslayer Blade to Ranni to recieve the Carian Inverted Statue",
-      "keys": ["ranni"],
+      "keys": ["ranni-ria"],
       "precursors": ["item_ranni_4"],
       "successors": ["item_ranni_6"],
       "active": false
@@ -2104,7 +2226,7 @@
       "name": "item_ranni_6",
       "type": "checkbox",
       "label": "Reach the top of the Divine Tower of Liurnia and collect the Cursemark of Death",
-      "keys": ["ranni"],
+      "keys": ["ranni-ria"],
       "precursors": ["item_ranni_5"],
       "successors": ["item_ranni_7"],
       "active": false
@@ -2141,7 +2263,7 @@
       "type": "checkbox",
       "label": "Go to Rennala's boss room to open the locked chest to get the Dark Moon Ring",
       "keys": ["ranni"],
-      "precursors": ["item_ranni_9"],
+      "precursors": ["item_ranni_9", "event_5"],
       "successors": ["item_ranni_11"],
       "active": false
     },
@@ -2166,7 +2288,7 @@
     {
       "name": "item_ranni_13",
       "type": "checkbox",
-      "label": "Using the Dark Moon Ring on Ranni's body will reward the player with the Dark Moon Greatsword",
+      "label": "Using the Dark Moon Ring on Ranni's body will reward the player with the Dark Moon Greatsword, Ranni's ending will now be avaliable after the final boss",
       "keys": ["ranni"],
       "precursors": ["item_ranni_12"],
       "successors": [],
@@ -2416,6 +2538,355 @@
       "keys": ["dungeater"],
       "precursors": ["item_dungeater_5"],
       "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_albus_1",
+      "type": "checkbox",
+      "label": "Hit the pot in the Village of the Albinaurics and talk to Albus to recieve the Haligtree Secret Medallion (Right)",
+      "keys": ["albus"],
+      "precursors": ["event_1"],
+      "successors": ["item_albus_2"],
+      "active": false
+    },
+    {
+      "name": "item_albus_2",
+      "type": "checkbox",
+      "label": "Go to Roundtable Hold and fight Ensha",
+      "keys": ["albus"],
+      "precursors": ["item_albus_1", "event_2"],
+      "successors": ["item_latenna_1", "item_albus_3"],
+      "active": false
+    },
+    {
+      "name": "item_albus_3",
+      "type": "checkbox",
+      "label": "Kill Commander Niall in Castle Sol to collect the Haligtree Secret Medallion (Left)",
+      "keys": ["albus"],
+      "precursors": ["item_albus_2", "event_14"],
+      "successors": ["item_albus_4"],
+      "active": false
+    },
+    {
+      "name": "item_albus_4",
+      "type": "checkbox",
+      "label": "Travel to the Concecrated Snowfield using the Secret Medallion",
+      "keys": ["albus"],
+      "precursors": ["item_albus_4"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_latenna_1",
+      "type": "checkbox",
+      "label": "Go through the Lakeside Crystal Cave to reach the Slumbering Wolf's Shack",
+      "keys": ["latenna"],
+      "precursors": ["item_albus_3"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_latenna_2",
+      "type": "checkbox",
+      "label": "Talk to Latenna to recieve her Spirit Ash",
+      "keys": ["latenna"],
+      "precursors": ["item_latenna_1"],
+      "successors": ["item_latenna_3"],
+      "active": false
+    },
+    {
+      "name": "item_latenna_3",
+      "type": "checkbox",
+      "label": "Reach the Apostate Derelict located in the Consecrated Snowfield and summon Latenna at the foot of the giant Albinauric woman",
+      "keys": ["latenna"],
+      "precursors": ["item_latenna_2"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_gowry_1",
+      "type": "checkbox",
+      "label": "Talk to Gowry in Gowry's Shack",
+      "keys": ["gowry"],
+      "precursors": ["event_1"],
+      "successors": ["item_gowry_2"],
+      "active": false
+    },
+    {
+      "name": "item_gowry_2",
+      "type": "checkbox",
+      "label": "Kill Commander O'Neal to get the Unalloyed Gold Needle",
+      "keys": ["gowry"],
+      "precursors": ["item_gowry_1"],
+      "successors": ["item_gowry_3"],
+      "active": false
+    },
+    {
+      "name": "item_gowry_3",
+      "type": "checkbox",
+      "label": "Return the Needle to Gowry and He will Repair it",
+      "keys": ["gowry"],
+      "precursors": ["item_gowry_2"],
+      "successors": ["item_millicent_1"],
+      "active": false
+    },
+    {
+      "name": "item_gowry_4",
+      "type": "checkbox",
+      "label": "Return to Gowry and buy all of his spells",
+      "keys": ["gowry", "millicent"],
+      "precursors": ["item_gowry_3", "item_millicent_1"],
+      "successors": ["item_millicent_2"],
+      "active": false
+    },
+
+    {
+      "name": "item_millicent_1",
+      "type": "checkbox",
+      "label": "Give the Needle to Millicent in the Church of Plague, reload the area and talk to her again, reload the area again and talk to her at Gowry's Shack",
+      "keys": ["millicent"],
+      "precursors": ["item_gowry_3"],
+      "successors": ["item_millicent_2"],
+      "active": false
+    },
+    {
+      "name": "item_millicent_2",
+      "type": "checkbox",
+      "label": "Talk to Millicent in the Altus Plataeu by the Erdtree-Gazing Hill Grace",
+      "keys": ["millicent"],
+      "precursors": ["item_millicent_1", "event_10"],
+      "successors": ["item_millicent_3"],
+      "active": false
+    },
+    {
+      "name": "item_millicent_3",
+      "type": "checkbox",
+      "label": "Go to the Shaded Castle and Retrieve the Valkyrie's Prosthesis, return to Millicent and give it to her",
+      "keys": ["millicent"],
+      "precursors": ["item_millicent_2"],
+      "successors": ["item_millicent_4"],
+      "active": false
+    },
+    {
+      "name": "item_millicent_4",
+      "type": "checkbox",
+      "label": "Kill the Godskin Noble in Dominula, Windmill Village, reload the area and talk to Millicent",
+      "keys": ["millicent"],
+      "precursors": ["item_millicent_3"],
+      "successors": ["item_millicent_5"],
+      "active": false
+    },
+    {
+      "name": "item_millicent_5",
+      "type": "checkbox",
+      "label": "Talk to Millicent at the Ancient Snow Valley Ruins Grace in the Mountaintop of the Giants",
+      "keys": ["millicent"],
+      "precursors": ["item_millicent_4", "event_14"],
+      "successors": ["item_millicent_6", "item_albus_4"],
+      "active": false
+    },
+    {
+      "name": "item_millicent_6",
+      "type": "checkbox",
+      "label": "Light the fires around Ordina, Liturgical Town to reach Miquella's Haligtree",
+      "keys": ["millicent"],
+      "precursors": ["item_millicent_5", "item_albus_4"],
+      "successors": ["item_millicent_7"],
+      "active": false
+    },
+    {
+      "name": "item_millicent_7",
+      "type": "checkbox",
+      "label": "Continue to the Drainage Channel Grace, trabel up the ladder and cross the branch to fight a Defiled Root Monster. Kill it then reload the area",
+      "keys": ["millicent"],
+      "precursors": ["item_millicent_6"],
+      "successors": ["item_millicent_8"],
+      "active": false
+    },
+    {
+      "name": "item_millicent_8",
+      "type": "checkbox",
+      "label": "Activate the Red Summon Sign by the Defiled Root Monster has you invade Millicent and kill her, giving you Millicent's Prosthesis for the deed",
+      "keys": ["millicent", "millicent-fight"],
+      "precursors": ["item_millicent_7"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_millicent_9",
+      "type": "checkbox",
+      "label": "Activate the Summon Sign by the Defiled Root Monster and assist her to fight her sisters, reload the area again to get the Unalloyed Gold Needle",
+      "keys": ["millicent", "millicent-help"],
+      "precursors": ["item_millicent_7"],
+      "successors": ["item_millicent_10"],
+      "active": false
+    },
+    {
+      "name": "item_millicent_10",
+      "type": "checkbox",
+      "label": "Use the Unalloyed Needle in Malenia's boss room",
+      "keys": ["frenzy"],
+      "precursors": ["item_millicent_7", "event_20"],
+      "successors": ["item_millicent_11"],
+      "active": false
+    },
+    {
+      "name": "item_millicent_11",
+      "type": "checkbox",
+      "label": "Optionally use Miquella's Needle in Dragonlord Placidusax's arena to counteract the Frenzied Flame",
+      "keys": ["frenzy"],
+      "precursors": ["item_millicent_10", "event_16"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_hyetta_1",
+      "type": "checkbox",
+      "label": "Meet Hyetta at the Lake-Facing Cliff Grace",
+      "keys": ["hyetta"],
+      "precursors": ["item_irina_5", "event_1"],
+      "successors": ["item_hyetta_2"],
+      "active": false
+    },
+    {
+      "name": "item_hyetta_2",
+      "type": "checkbox",
+      "label": "Grab the Shabriri Grape from under the throne room of Stormveil Castle",
+      "keys": ["hyetta"],
+      "precursors": ["item_hyetta_1"],
+      "successors": ["item_hyetta_3"],
+      "active": false
+    },
+    {
+      "name": "item_hyetta_3",
+      "type": "checkbox",
+      "label": "In Purified Ruins, find the hidden floor in the center of the ruins to grab the Shabriri Grape within",
+      "keys": ["hyetta"],
+      "precursors": ["item_hyetta_2"],
+      "successors": ["item_hyetta_4"],
+      "active": false
+    },
+    {
+      "name": "item_hyetta_4",
+      "type": "checkbox",
+      "label": "Find Hyetta in the North-West side of the Purified Ruins, and give her the grape",
+      "keys": ["hyetta"],
+      "precursors": ["item_hyetta_3"],
+      "successors": ["item_irina_6"],
+      "active": false
+    },
+    {
+      "name": "item_hyetta_5",
+      "type": "checkbox",
+      "label": "Talk to Hyetta just north of Gate Town Bridge Grace, give her a Grape, then tell her what it was",
+      "keys": ["hyetta"],
+      "precursors": ["item_hyetta_4", "item_irina_6"],
+      "successors": ["item_hyetta_6"],
+      "active": false
+    },
+    {
+      "name": "item_hyetta_6",
+      "type": "checkbox",
+      "label": "Talk to Hyetta a Bellum Church Grace, then kill Festering Fingerprint Vyke near the Church of Inhibition, and give her the Fingerprint Grape he drops",
+      "keys": ["hyetta"],
+      "precursors": ["item_hyetta_5"],
+      "successors": ["item_hyetta_7"],
+      "active": false
+    },
+    {
+      "name": "item_hyetta_7",
+      "type": "checkbox",
+      "label": "From the Subterranean Shunning-Grounds, travel through the Cathederal of the Forsaken to reach the Frenzied Flame Proscription",
+      "keys": ["frenzy"],
+      "precursors": ["item_hyetta_6", "event_11"],
+      "successors": ["item_hyetta_8"],
+      "active": false
+    },
+    {
+      "name": "item_hyetta_8",
+      "type": "checkbox",
+      "label": "Remove your Armour and commune with the Three Fingers",
+      "keys": ["frenzy"],
+      "precursors": ["item_hyetta_6"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_d_1",
+      "type": "checkbox",
+      "label": "Talk to D in Stormhill",
+      "keys": ["d"],
+      "precursors": [],
+      "successors": ["item_d_2"],
+      "active": false
+    },
+    {
+      "name": "item_d_2",
+      "type": "checkbox",
+      "label": "Kill the Tibia Mariner in Summonwater Village to aquire a Deathroot, before leaving speak to D",
+      "keys": ["d"],
+      "precursors": ["item_d_1"],
+      "successors": ["item_d_3"],
+      "active": false
+    },
+    {
+      "name": "item_d_3",
+      "type": "checkbox",
+      "label": "Speak to D in Roundtable Hold",
+      "keys": ["d"],
+      "precursors": ["item_d_2", "event_2"],
+      "successors": ["item_fia_1", "item_d_4"],
+      "active": false
+    },
+    {
+      "name": "item_d_4",
+      "type": "checkbox",
+      "label": "Give D's Armour to his brother, return to Fia to find her dead, reload the area again to get the twinned set back",
+      "keys": ["d-brother"],
+      "precursors": ["item_d_2", "event_2"],
+      "successors": [],
+      "active": false
+    },
+
+    {
+      "name": "item_fia_1",
+      "type": "checkbox",
+      "label": "Talk to Fia to recieve the Weathered Dagger",
+      "keys": ["d"],
+      "precursors": ["item_rogier_5", "item_d_3", "event_10"],
+      "successors": ["item_fia_2"],
+      "active": false
+    },
+    {
+      "name": "item_fia_2",
+      "type": "checkbox",
+      "label": "Give the Weathered Dagger to D, reload the area to loot his body and talk to Fia",
+      "keys": ["d"],
+      "precursors": ["item_rogier_5", "item_d_3", "event_10"],
+      "successors": [],
+      "active": false
+    },
+    {
+      "name": "item_fia_3",
+      "type": "checkbox",
+      "label": "Travel to Deeproot Depths and fight Fia's Champions",
+      "keys": ["d"],
+      "precursors": ["item_fia_2", "item_rogier_5", "item_d_3", "event_10", "event_18"],
+      "successors": ["item_fia_4"],
+      "active": false
+    },
+    {
+      "name": "item_fia_4",
+      "type": "checkbox",
+      "label": "Talk to Fia and ask to be held, give her the cursemark, reload the area, and interact with her sleeping to fight Lichdragon Fortissax",
+      "keys": ["d"],
+      "precursors": ["item_fia_3"],
+      "successors": ["item_d_4"],
       "active": false
     }
   ]
