@@ -61,4 +61,9 @@ body {
 
 .items_checkbox-input {
   margin-right: .5rem;
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
 }
+
+
